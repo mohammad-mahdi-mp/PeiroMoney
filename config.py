@@ -1,3 +1,4 @@
+import ccxt
 # config.py
 class Config:
     DEEPSEEK_API_KEY = "sk-5b8d8f710d134a3bac674c3b83995fdf"
