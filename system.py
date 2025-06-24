@@ -2,13 +2,13 @@
 import asyncio
 import numpy as np
 from datetime import datetime
-from data.fetcher import DataFetcher
-from analysis.technical_analyzer import TechnicalAnalyzer
-from analysis.fundamental_analyzer import FundamentalAnalyzer
-from integrations.deepseek_ai import DeepSeekAI
-from ml.forecaster import PriceForecaster
-from trading.engine import IntelligentTradingEngine
-from trading.risk_manager import RiskManager
+from fetcher import DataFetcher
+from technical_analyzer import TechnicalAnalyzer
+from fundamental_analyzer import FundamentalAnalyzer
+from deepseek_ai import DeepSeekAI
+from forecaster import PriceForecaster
+from engine import IntelligentTradingEngine
+from risk_manager import RiskManager
 from config import Config
 from utils import setup_logger
 

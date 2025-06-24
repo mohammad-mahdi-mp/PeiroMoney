@@ -1,7 +1,7 @@
 # app.py
 import streamlit as st
-from core.system import CryptoAnalysisSystem
-from ui.visualizer import TradingViewVisualizer
+from system import CryptoAnalysisSystem
+from visualizer import TradingViewVisualizer
 
 def main():
     st.set_page_config(
