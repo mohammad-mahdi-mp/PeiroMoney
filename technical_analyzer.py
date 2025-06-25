@@ -10,16 +10,12 @@ logger = setup_logger()
 
 class TechnicalAnalyzer:
     def __init__(self, df: pd.DataFrame, timeframes: dict = None):
+        # Existing initialization
         if df.empty:
             raise ValueError("Empty dataframe provided for technical analysis")
         if len(df) < max(Config.MA_PERIODS):
             logger.warning(f"Insufficient data for technical analysis. Got {len(df)} points")
-        
         self.df = df.copy()
-        self.timeframes = timeframes.copy() if timeframes else {}
-        self.trendlines = []
-        self._initialize_attributes()
-        
         self.calculate_all_indicators()
         self.detect_candlestick_patterns()
         self.calculate_volume_profile()
@@ -28,21 +24,24 @@ class TechnicalAnalyzer:
         self.identify_liquidity_pools()
         self.detect_market_structure()
         self.auto_draw_trendlines()
+        self.trendlines = []
+        
+        # New multi-timeframe support
+        self.timeframes = {}
+        if timeframes:
+            for tf_name, tf_df in timeframes.items():
+                self.timeframes[tf_name] = tf_df.copy()
+                # Calculate indicators for additional timeframes if needed
+                # (Optional: Add indicator calculations for other timeframes)
 
-    def _initialize_attributes(self):
-        """Initialize all analysis result attributes"""
-        self.supply_zones = []
-        self.demand_zones = []
-        self.liquidity_pools = {'highs': [], 'lows': []}
-        self.significant_levels = []
-        self.market_structure = {}
+        # New attributes
         self.pivot_point = None
         self.r3 = None
         self.s3 = None
         self.price_bridges = []
         self.liquidation_clusters = []
         self.fib_levels = {}
-#.
+
     def calculate_pivot_points(self):
         """Calculate weekly/monthly pivot points"""
         # Weekly pivots
@@ -66,22 +65,17 @@ class TechnicalAnalyzer:
         monthly_df['s3_monthly'] = monthly_df['pivot_monthly'] - (monthly_df['high'] - monthly_df['low']) * 1.5
 
         # Merge with main dataframe
-        weekly_df = weekly_df.reset_index()
-        monthly_df = monthly_df.reset_index()
-        
         self.df = self.df.merge(
-            weekly_df[['timestamp', 'pivot', 'r3', 's3']], 
+            weekly_df[['pivot', 'r3', 's3']], 
             left_on=self.df['timestamp'].dt.to_period('W').dt.start_time,
-            right_on='timestamp',
-            how='left',
-            suffixes=('', '_weekly')
+            right_index=True, 
+            how='left'
         ).merge(
-            monthly_df[['timestamp', 'pivot_monthly', 'r3_monthly', 's3_monthly']],
+            monthly_df[['pivot_monthly', 'r3_monthly', 's3_monthly']],
             left_on=self.df['timestamp'].dt.to_period('M').dt.start_time,
-            right_on='timestamp',
-            how='left',
-            suffixes=('', '_monthly')
-        ).ffill().drop(columns=['timestamp_weekly', 'timestamp_monthly'], errors='ignore')
+            right_index=True,
+            how='left'
+        ).ffill()
 #.
     def identify_price_bridges(self):
         """Identify price bridges with confluence scoring"""
@@ -93,22 +87,15 @@ class TechnicalAnalyzer:
         
         # Create price clusters
         all_levels = np.array(supply_prices + demand_prices + volume_levels + fib_levels)
-        if len(all_levels) < 2:
-            self.price_bridges = []
-            return
-            
         z_scores = np.abs(zscore(all_levels))
         filtered_levels = all_levels[z_scores < 2]  # Remove outliers
         
         # Cluster analysis
         clusters = []
-        atr = self.df['atr'].mean() or 0.01
-        cluster_threshold = atr * 0.5
-        
         for level in filtered_levels:
             found = False
             for cluster in clusters:
-                if abs(level - cluster['mean']) < cluster_threshold:
+                if np.abs(level - cluster['mean']) < self.df['atr'].mean() * 0.5:
                     cluster['values'].append(level)
                     cluster['mean'] = np.mean(cluster['values'])
                     found = True
@@ -119,26 +106,22 @@ class TechnicalAnalyzer:
         # Score clusters
         self.price_bridges = []
         for cluster in clusters:
-            cluster_values = np.array(cluster['values'])
             score = 0
+            supply_demand = any(np.isin(cluster['values'], supply_prices + demand_prices))
+            fib_confluence = any(np.isin(cluster['values'], fib_levels))
+            volume_confluence = any(np.isin(cluster['values'], volume_levels))
             
-            # Confluence checks
-            supply_demand = any(np.isin(cluster_values, supply_prices + demand_prices))
-            fib_confluence = any(np.isin(cluster_values, fib_levels)) if fib_levels else False
-            volume_confluence = any(np.isin(cluster_values, volume_levels)) if volume_levels else False
-            
-            # Scoring
             score += 3 if supply_demand else 0
             score += 3 if fib_confluence else 0
             score += 2 if volume_confluence else 0
+            score = min(score, 10)
             
-            # Determine bridge type
-            bridge_type = 'bullish' if any(np.isin(cluster_values, demand_prices)) else 'bearish'
+            bridge_type = 'bullish' if any(np.isin(cluster['values'], demand_prices)) else 'bearish'
             
             self.price_bridges.append({
                 'price_level': cluster['mean'],
                 'type': bridge_type,
-                'strength_score': min(score, 10),
+                'strength_score': score,
                 'supply_demand': supply_demand,
                 'fib_confluence': fib_confluence,
                 'volume_profile': volume_confluence
@@ -258,7 +241,7 @@ class TechnicalAnalyzer:
         self._add_vwap()
         
         logger.info("Calculated all technical indicators")
-#.
+#.        
     def _add_ichimoku(self):
         """Add Ichimoku Cloud indicators"""
         if len(self.df) < max(Config.ICHIMOKU_PERIODS):
@@ -292,7 +275,7 @@ class TechnicalAnalyzer:
         self.df['price_above_cloud'] = self.df['close'] > self.df[['senkou_a', 'senkou_b']].max(axis=1)
 #.    
     def _add_supertrend(self):
-        """Vectorized Supertrend implementation"""
+        """Add Supertrend indicator"""
         if len(self.df) < Config.SUPERTREND_PERIOD:
             return
             
@@ -307,70 +290,54 @@ class TechnicalAnalyzer:
         upper_band = hl2 + (Config.SUPERTREND_MULTIPLIER * atr)
         lower_band = hl2 - (Config.SUPERTREND_MULTIPLIER * atr)
         
-        # Vectorized calculation
-        supertrend = pd.Series(np.zeros(len(self.df)), index=self.df.index)
-        direction = pd.Series(np.ones(len(self.df)), index=self.df.index)
+        supertrend = np.zeros(len(self.df))
+        direction = np.zeros(len(self.df))
         
-        # Initialize first value
-        supertrend.iloc[0] = upper_band.iloc[0]
+        supertrend[0] = upper_band.iloc[0] if not upper_band.empty else 0
+        direction[0] = 1
         
         for i in range(1, len(self.df)):
-            close_prev = self.df['close'].iloc[i-1]
-            supertrend_prev = supertrend.iloc[i-1]
-            
-            if self.df['close'].iloc[i] > supertrend_prev:
-                supertrend.iloc[i] = lower_band.iloc[i]
-                direction.iloc[i] = -1
+            if self.df['close'].iloc[i] > supertrend[i-1]:
+                supertrend[i] = lower_band.iloc[i]
+                direction[i] = -1
             else:
-                supertrend.iloc[i] = upper_band.iloc[i]
-                direction.iloc[i] = 1
+                supertrend[i] = upper_band.iloc[i]
+                direction[i] = 1
         
         self.df['supertrend'] = supertrend
         self.df['supertrend_direction'] = direction
-#.
+#.        
     def _add_vwap(self):
         """Add Volume Weighted Average Price"""
         # Only for intraday timeframes
         if self.df['timestamp'].dt.floor('d').nunique() > 1:  # Check if intraday
             vwap = (self.df['volume'] * (self.df['high'] + self.df['low'] + self.df['close']) / 3).cumsum() / self.df['volume'].cumsum()
             self.df['vwap'] = vwap
-#.
+#.            
     def calculate_volume_profile(self):
-        """Robust volume profile calculation"""
+        """Calculate volume profile for significant price levels"""
         try:
-            if len(self.df) < 5:  # Insufficient data
-                self.significant_levels = []
-                return
-                
-            # Use price range for binning
-            min_price = self.df['low'].min()
-            max_price = self.df['high'].max()
-            price_range = max_price - min_price
+            # Create price bins
+            price_range = self.df['high'].max() - self.df['low'].min()
+            bin_size = price_range / 20  # 20 bins
             
-            if price_range == 0:  # Handle flat market
-                self.significant_levels = [self.df['close'].mean()]
-                return
-                
-            # Create bins based on price range
-            num_bins = min(20, len(self.df) // 5)  # Adaptive bin count
-            bins = np.linspace(min_price, max_price, num_bins + 1)
+            # Calculate volume at price levels
+            self.df['price_bin'] = pd.cut(
+                self.df['close'],
+                bins=20,
+                labels=False
+            )
             
-            # Assign each candle to bins based on high-low range
-            vol_profile = pd.Series(0, index=(bins[:-1] + bins[1:]) / 2)
+            volume_profile = self.df.groupby('price_bin')['volume'].sum()
             
-            for _, row in self.df.iterrows():
-                # Find bins within candle's high-low range
-                mask = (bins[:-1] >= row['low']) & (bins[1:] <= row['high'])
-                valid_bins = bins[:-1][mask]
-                
-                if len(valid_bins) > 0:
-                    # Distribute volume equally across bins
-                    vol_per_bin = row['volume'] / len(valid_bins)
-                    vol_profile.loc[valid_bins] += vol_per_bin
+            # Find significant levels
+            high_volume_bins = volume_profile.nlargest(3).index
+            self.significant_levels = []
             
-            # Find significant levels (top 3 volume bins)
-            significant_bins = vol_profile.nlargest(3).index
-            self.significant_levels = significant_bins.tolist()
+            for bin_idx in high_volume_bins:
+                bin_data = self.df[self.df['price_bin'] == bin_idx]
+                price_level = bin_data['close'].mean()
+                self.significant_levels.append(price_level)
             
             logger.debug(f"Volume profile calculated with levels: {self.significant_levels}")
         except Exception as e:
@@ -378,184 +345,93 @@ class TechnicalAnalyzer:
             self.significant_levels = []
 #.
     def identify_swing_points(self, lookback: int = 5):
-        """Efficient swing point identification"""
+        """Identify swing highs and lows using scipy's find_peaks"""
         if len(self.df) < lookback * 2:
             return
             
-        # Initialize columns
+        # Find swing highs
+        highs = self.df['high'].values
+        high_peaks, _ = find_peaks(highs, distance=lookback)
+        
+        # Find swing lows
+        lows = self.df['low'].values
+        low_peaks, _ = find_peaks(-lows, distance=lookback)
+        
+        # Create new columns
         self.df['swing_high'] = np.nan
         self.df['swing_low'] = np.nan
         
-        # Find swing highs
-        high_peaks, _ = find_peaks(
-            self.df['high'].values, 
-            distance=lookback,
-            prominence=(self.df['atr'].mean() or 0.01)
-        )
-        
-        # Find swing lows
-        low_peaks, _ = find_peaks(
-            -self.df['low'].values, 
-            distance=lookback,
-            prominence=(self.df['atr'].mean() or 0.01)
-        )
-        
-        # Update DataFrame in vectorized manner
-        self.df.loc[self.df.index[high_peaks], 'swing_high'] = self.df.loc[self.df.index[high_peaks], 'high']
-        self.df.loc[self.df.index[low_peaks], 'swing_low'] = self.df.loc[self.df.index[low_peaks], 'low']
-#.
+        # Mark swing highs
+        for idx in high_peaks:
+            self.df.at[self.df.index[idx], 'swing_high'] = highs[idx]
+            
+        # Mark swing lows
+        for idx in low_peaks:
+            self.df.at[self.df.index[idx], 'swing_low'] = lows[idx]
+#.    
     def identify_supply_demand_zones(self, consolidation_threshold: float = 0.02):
-        """Optimized supply/demand zone identification"""
-        # Get swing points indices
-        swing_high_idxs = self.df[self.df['swing_high'].notna()].index
-        swing_low_idxs = self.df[self.df['swing_low'].notna()].index
-        
-        # Process swing highs (supply zones)
+        """Identify supply and demand zones based on swing points"""
+        if 'swing_high' not in self.df or 'swing_low' not in self.df:
+            return
+            
+        # Find significant swing highs (supply zones)
         supply_zones = []
-        for idx in swing_high_idxs:
-            price = self.df.at[idx, 'swing_high']
-            
-            # Check consolidation window
-            start_idx = max(0, idx - 5)
-            end_idx = min(len(self.df) - 1, idx + 5)
-            window = self.df.iloc[start_idx:end_idx + 1]
-            
-            if len(window) < 3:
-                continue
+        for idx, row in self.df.iterrows():
+            if not np.isnan(row['swing_high']):
+                # Check if price consolidated near this high
+                start_idx = max(0, idx-5)
+                end_idx = min(len(self.df)-1, idx+5)
+                window = self.df.iloc[start_idx:end_idx+1]
                 
-            price_range = window['high'].max() - window['low'].min()
-            if price_range / price < consolidation_threshold:
-                strength_score = self._calculate_zone_strength(price, idx)
-                supply_zones.append({
-                    'price': price,
-                    'start': window.index[0],
-                    'end': window.index[-1],
-                    'strength_score': strength_score,
-                    'test_count': 0
-                })
+                if len(window) < 3:
+                    continue
+                    
+                price_range = window['high'].max() - window['low'].min()
+                
+                if price_range / row['swing_high'] < consolidation_threshold:
+                    # Calculate zone strength
+                    strength_score = self._calculate_zone_strength(row['swing_high'], idx)
+                    supply_zones.append({
+                        'price': row['swing_high'],
+                        'start': window.index[0],
+                        'end': window.index[-1],
+                        'strength_score': strength_score,
+                        'test_count': 0  # Will be updated later
+                    })
         
-        # Process swing lows (demand zones)
+        # Find significant swing lows (demand zones)
         demand_zones = []
-        for idx in swing_low_idxs:
-            price = self.df.at[idx, 'swing_low']
-            
-            # Check consolidation window
-            start_idx = max(0, idx - 5)
-            end_idx = min(len(self.df) - 1, idx + 5)
-            window = self.df.iloc[start_idx:end_idx + 1]
-            
-            if len(window) < 3:
-                continue
+        for idx, row in self.df.iterrows():
+            if not np.isnan(row['swing_low']):
+                # Check if price consolidated near this low
+                start_idx = max(0, idx-5)
+                end_idx = min(len(self.df)-1, idx+5)
+                window = self.df.iloc[start_idx:end_idx+1]
                 
-            price_range = window['high'].max() - window['low'].min()
-            if price_range / price < consolidation_threshold:
-                strength_score = self._calculate_zone_strength(price, idx)
-                demand_zones.append({
-                    'price': price,
-                    'start': window.index[0],
-                    'end': window.index[-1],
-                    'strength_score': strength_score,
-                    'test_count': 0
-                })
+                if len(window) < 3:
+                    continue
+                    
+                price_range = window['high'].max() - window['low'].min()
+                
+                if price_range / row['swing_low'] < consolidation_threshold:
+                    # Calculate zone strength
+                    strength_score = self._calculate_zone_strength(row['swing_low'], idx)
+                    
+                    demand_zones.append({
+                        'price': row['swing_low'],
+                        'start': window.index[0],
+                        'end': window.index[-1],
+                        'strength_score': strength_score,
+                        'test_count': 0  # Will be updated later
+                    })
         
-        # Update test counts
+        # Update test counts for all zones
         self._update_zone_test_counts(supply_zones, demand_zones)
         
+        # Store zones
         self.supply_zones = supply_zones
-        self.demand_zones = demand_zones
-#.
-    def detect_candlestick_patterns(self):
-        """Fixed candlestick pattern detection"""
-        df = self.df
-        
-        # Hammer
-        body_size = (df['open'] - df['close']).abs()
-        candle_range = df['high'] - df['low']
-        lower_wick = df['close'] - df['low']
-        upper_wick = df['high'] - df['close']
-        
-        df['hammer'] = (
-            (candle_range > 3 * body_size) &
-            (lower_wick / candle_range > 0.6) &
-            (upper_wick / candle_range < 0.2)
-        )
-        # Shooting Star
-        df['shooting_star'] = (
-            (candle_range > 3 * body_size) &
-            (upper_wick / candle_range > 0.6) &
-            (lower_wick / candle_range < 0.2)
-        )
-        # Bullish Engulfing
-        prev_bearish = df['close'].shift(1) < df['open'].shift(1)
-        current_bullish = df['close'] > df['open']
-        engulf_condition =  (df['open'] < df['close'].shift(1)) & (df['close'] > df['open'].shift(1))
-        df['bullish_engulfing'] = prev_bearish & current_bullish & engulf_condition
-        
-        # Bearish Engulfing
-        prev_bullish = df['close'].shift(1) > df['open'].shift(1)
-        current_bearish = df['close'] < df['open']
-        engulf_condition = (df['open'] > df['close'].shift(1)) & (df['close'] < df['open'].shift(1))
-        df['bearish_engulfing'] = prev_bullish & current_bearish & engulf_condition
-        
-        # Morning Star
-        prev_red = df['close'].shift(2) < df['open'].shift(2)
-        small_body = (df['close'].shift(1) - df['open'].shift(1)).abs() < 0.1 * candle_range.shift(1)
-        green_candle = df['close'] > df['open']
-        above_first_open = df['close'] > df['open'].shift(2)
-        df['morning_star'] = prev_red & small_body & green_candle & above_first_open
-        
-        # Evening Star
-        prev_green = df['close'].shift(2) > df['open'].shift(2)
-        red_candle = df['close'] < df['open']
-        below_first_open = df['close'] < df['open'].shift(2)
-        df['evening_star'] = prev_green & small_body & red_candle & below_first_open
-#.
-    def auto_draw_trendlines(self, order=5):
-        """Efficient trendline identification"""
-        try:
-            # Find significant peaks and troughs
-            min_prominence = (self.df['atr'].mean() or 0.01) / 2
-            
-            peak_indices, _ = find_peaks(
-                self.df['high'].values, 
-                distance=order, 
-                prominence=min_prominence
-            )
-            
-            trough_indices, _ = find_peaks(
-                -self.df['low'].values, 
-                distance=order, 
-                prominence=min_prominence
-            )
-            
-            # Create resistance lines
-            if len(peak_indices) >= 2:
-                for i in range(1, len(peak_indices)):
-                    idx1, idx2 = peak_indices[i-1], peak_indices[i]
-                    self.trendlines.append({
-                        'type': 'resistance',
-                        'start_index': self.df.index[idx1],
-                        'start_price': self.df['high'].iloc[idx1],
-                        'end_index': self.df.index[idx2],
-                        'end_price': self.df['high'].iloc[idx2]
-                    })
-            
-            # Create support lines
-            if len(trough_indices) >= 2:
-                for i in range(1, len(trough_indices)):
-                    idx1, idx2 = trough_indices[i-1], trough_indices[i]
-                    self.trendlines.append({
-                        'type': 'support',
-                        'start_index': self.df.index[idx1],
-                        'start_price': self.df['low'].iloc[idx1],
-                        'end_index': self.df.index[idx2],
-                        'end_price': self.df['low'].iloc[idx2]
-                    })
-                
-        except Exception as e:
-            logger.error(f"Error in auto_draw_trendlines: {e}")
-            self.trendlines = []
-#.
+        self.demand_zones = demand_zones    
+#.    
     def _calculate_zone_strength(self, price: float, zone_idx: int) -> int:
         """Calculate strength score (1-10) for a supply/demand zone"""
         score = 5  # Base score
@@ -589,7 +465,7 @@ class TechnicalAnalyzer:
         
         # Constrain score between 1-10
         return max(1, min(10, score))
-#.
+#.    
     def _update_zone_test_counts(self, supply_zones: list, demand_zones: list):
         """Update the test count for each zone based on price revisits"""
         all_zones = supply_zones + demand_zones
@@ -622,7 +498,7 @@ class TechnicalAnalyzer:
                 zone['strength_score'] = min(10, zone['strength_score'] + 1)
             elif zone['test_count'] >= 3:
                 zone['strength_score'] = max(1, zone['strength_score'] - 2)
-#.
+#.    
     def identify_liquidity_pools(self):
         """Identify liquidity pools (untapped swing highs/lows)"""
         self.liquidity_pools = {
@@ -670,7 +546,7 @@ class TechnicalAnalyzer:
         
         # Find equal highs and equal lows
         self._find_equal_highs_lows()    
-#.
+#.    
     def _find_equal_highs_lows(self):
         """Find clusters of equal highs and equal lows"""
         # Equal highs
@@ -758,7 +634,7 @@ class TechnicalAnalyzer:
                     'count': cluster['count'],
                     'timestamp': cluster['timestamps'][-1]
                 })
-#.
+#.    
     def detect_market_structure(self):
         """Detect market structure with sequence analysis"""
         if 'swing_high' not in self.df or 'swing_low' not in self.df:
@@ -856,4 +732,113 @@ class TechnicalAnalyzer:
             self.df.loc[self.df.index[-1], 'bos'] = True
         if choch:
             self.df.loc[self.df.index[-1], 'choch'] = True
+#.        
+    def detect_candlestick_patterns(self):
+        """Detect common candlestick patterns"""
+        df = self.df
+        
+        # Hammer: Small body, long lower wick, little/no upper wick
+        df['hammer'] = (
+            ((df['high'] - df['low']) > 3 * (df['open'] - df['close']).abs()) &
+            ((df['close'] - df['low']) / (0.001 + df['high'] - df['low']) > 0.6) &
+            ((df['high'] - df['close']) / (0.001 + df['high'] - df['low']) < 0.2)
+        )
+
+        # Shooting Star: Small body, long upper wick, little/no lower wick
+        df['shooting_star'] = (
+            ((df['high'] - df['low']) > 3 * (df['open'] - df['close']).abs()) &
+            ((df['high'] - df['close']) / (0.001 + df['high'] - df['low']) > 0.6) &
+            ((df['close'] - df['low']) / (0.001 + df['high'] - df['low']) < 0.2)
+        )
+
+        # Bullish Engulfing: Current green candle fully engulfs previous red candle
+        df['bullish_engulfing'] = (
+            (df['close'].shift(1) < df['open'].shift(1)) &  # Previous candle is bearish
+            (df['close'] > df['open']) &                  # Current candle is bullish
+            (df['open'] < df['close'].shift(1)) &         # Current open is lower than previous close
+            (df['close'] > df['open'].shift(1))           # Current close is higher than previous open
+        )
+        
+        # Bearish Engulfing: Current red candle fully engulfs previous green candle
+        df['bearish_engulfing'] = (
+            (df['close'].shift(1) > df['open'].shift(1)) &  # Previous candle is bullish
+            (df['close'] < df['open']) &                   # Current candle is bearish
+            (df['open'] > df['close'].shift(1)) &          # Current open is higher than previous close
+            (df['close'] < df['open'].shift(1))            # Current close is lower than previous open
+        )
+        # Morning Star: Downtrend, long red, small candle, long green
+        df['morning_star'] = (
+            (df['close'].shift(2) < df['open'].shift(2)) &
+            (abs(df['close'].shift(1) - df['open'].shift(1)) < 0.1 * (df['high'].shift(1) - df['low'].shift(1))) & # <-- FIX: Parenthesis added            (df['close'] > df['open']) &
+            (df['close'] > df['open'].shift(2))
+        )
+
+        # Evening Star: Uptrend, long green, small candle, long red
+        df['evening_star'] = (
+            (df['close'].shift(2) > df['open'].shift(2)) &
+            (abs(df['close'].shift(1) - df['open'].shift(1)) < 0.1 * (df['high'].shift(1) - df['low'].shift(1))) & # <-- FIX: Parenthesis added
+            (df['close'] < df['open']) &
+            (df['close'] < df['open'].shift(2))
+        )
 #.
+    def auto_draw_trendlines(self, order=5):
+        """
+        Automatically identifies and stores major trendlines based on swing highs and lows.
+        A simple implementation connecting the last two major pivots.
+        """
+        try:
+            # پیدا کردن سقف‌های کلیدی (نقاط مقاومت)
+            # پارامتر order به این معنی است که یک قله باید از هر طرف با 'order' نقطه پایین‌تر احاطه شده باشد
+            peak_indices, _ = find_peaks(self.df['high'], distance=order, prominence=self.df['atr'].mean() / 2)
+        
+            # پیدا کردن کف‌های کلیدی (نقاط حمایت) با پیدا کردن قله در سری معکوس قیمت 'low'
+            trough_indices, _ = find_peaks(-self.df['low'], distance=order, prominence=self.df['atr'].mean() / 2)
+
+            # ایجاد خط روند مقاومت با استفاده از دو سقف آخر
+            if len(peak_indices) >= 2:
+                last_two_peaks_indices = peak_indices[-2:]
+                p1_idx = self.df.index[last_two_peaks_indices[0]]
+                p2_idx = self.df.index[last_two_peaks_indices[1]]
+                p1_price = self.df['high'].iloc[last_two_peaks_indices[0]]
+                p2_price = self.df['high'].iloc[last_two_peaks_indices[1]]
+                
+                resistance_line = {
+                    'type': 'resistance',
+                    'start_index': p1_idx,
+                    'start_price': p1_price,
+                    'end_index': p2_idx,
+                    'end_price': p2_price
+                }
+                self.trendlines.append(resistance_line)
+
+            # ایجاد خط روند حمایت با استفاده از دو کف آخر
+            if len(trough_indices) >= 2:
+                last_two_troughs_indices = trough_indices[-2:]
+                t1_idx = self.df.index[last_two_troughs_indices[0]]
+                t2_idx = self.df.index[last_two_troughs_indices[1]]
+                t1_price = self.df['low'].iloc[last_two_troughs_indices[0]]
+                t2_price = self.df['low'].iloc[last_two_troughs_indices[1]]
+
+                support_line = {
+                    'type': 'support',
+                    'start_index': t1_idx,
+                    'start_price': t1_price,
+                    'end_index': t2_idx,
+                    'end_price': t2_price
+                }
+                self.trendlines.append(support_line)
+        
+            # برای دسترسی آسان‌تر، لیست خطوط روند را در یک ستون جدید در دیتافریم قرار می‌دهیم
+            # این کار ممکن است حافظه زیادی مصرف کند؛ در آینده می‌توان آن را بهینه‌تر کرد
+            if self.trendlines:
+                # Create a column that contains the list of trendlines for each row
+                self.df['trendlines'] = [self.trendlines for _ in range(len(self.df))]
+            else:
+                self.df['trendlines'] = [[] for _ in range(len(self.df))]
+
+        except Exception as e:
+            print(f"Error in auto_draw_trendlines: {e}")
+            # در صورت خطا، یک لیست خالی ایجاد می‌کنیم تا برنامه متوقف نشود
+            self.trendlines = []
+            self.df['trendlines'] = [[] for _ in range(len(self.df))]
+#.            
