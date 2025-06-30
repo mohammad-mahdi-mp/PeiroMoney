@@ -369,3 +369,38 @@ Request ID: h-pEW8K5cK3Vg6TSvepIFcS6R7ht-S-9VFfZbZfPtq6sLgDhtGeebA==
 2025-06-24 19:23:47,330 - CryptoAnalyzer - ERROR - No data retrieved for analysis
 2025-06-24 19:23:47,330 - CryptoAnalyzer - ERROR - No data retrieved for analysis
 2025-06-24 19:23:47,330 - CryptoAnalyzer - ERROR - No data retrieved for analysis
+2025-06-30 13:38:09,471 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:38:09,471 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:38:09,471 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:38:09,471 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:38:09,471 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:38:09,471 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:38:09,471 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:38:09,508 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,508 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,508 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,508 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,508 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,508 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,508 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,530 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:38:09,530 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:38:09,530 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:38:09,530 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:38:09,530 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:38:09,530 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:38:09,530 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:38:09,544 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,544 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,544 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,544 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,544 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,544 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,544 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107393.59999999999), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:38:09,612 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:38:09,612 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:38:09,612 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:38:09,612 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:38:09,612 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:38:09,612 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:38:09,612 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
