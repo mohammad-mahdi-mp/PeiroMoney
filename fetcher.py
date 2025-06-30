@@ -87,38 +87,26 @@ class DataFetcher:
     # ====================
     # MULTI-TIMEFRAME DATA
     # ====================
-    def get_candles(self) -> dict:
-        """Fetch candles for primary, confirmation and entry timeframes"""
+    def get_candles(self) -> pd.DataFrame:  # تغییر نوع بازگشتی
+        """Fetch candles for THIS specific timeframe"""
         try:
-            # Define strategy timeframes
-            timeframes = {
-                'primary': self.timeframe,  # Default strategy timeframe
-                'confirm': '1d',
-                'entry': '15m'
-            }
-            
-            results = {}
-            for key, tf in timeframes.items():
-                # Adjust historical days per timeframe
-                days = Config.TIMEFRAME_DAYS_MAP.get(tf, 7)
-                df = self._fetch_timeframe_via_rest(tf, days)
-                results[key] = df
-                
-            return results
-            
+            # حذف کد مربوط به multi-timeframe
+            days = Config.TIMEFRAME_DAYS_MAP.get(self.timeframe, 7)
+            return self._fetch_timeframe_via_rest(self.timeframe, days)
         except Exception as e:
-            logger.error(f"Multi-timeframe fetch error: {str(e)}")
-            return {
-                'primary': pd.DataFrame(),
-                'confirm': pd.DataFrame(),
-                'entry': pd.DataFrame()
-            }
-
-    def _fetch_timeframe_via_rest(self, timeframe: str, historical_days: int) -> pd.DataFrame:
-        """Fetch OHLCV data for specific timeframe"""
-        start_time = datetime.now() - timedelta(days=historical_days)
+            logger.error(f"Error fetching {self.timeframe} data: {str(e)}")
+            return pd.DataFrame()
         
+        if df.empty:
+            logger.warning(f"No data for {self.symbol}/{self.timeframe}")
+        return pd.DataFrame()  # Return empty instead of None
+
+    @retry(stop=stop_after_attempt(5), wait=wait_exponential(multiplier=1, min=2, max=30))
+    def _fetch_timeframe_via_rest(self, timeframe: str, historical_days: int) -> pd.DataFrame:
+        """Fetch OHLCV data with enhanced error handling"""
+        start_time = datetime.now() - timedelta(days=historical_days)
         try:
+            # Attempt to fetch data
             ohlcv = self.exchange.fetch_ohlcv(
                 self.symbol,
                 timeframe,
@@ -132,17 +120,18 @@ class DataFetcher:
                 
             df = pd.DataFrame(ohlcv, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
             df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
-            df = self._process_dataframe(df)
-            return df
+            return self._process_dataframe(df)
             
-        except ccxt.NetworkError as e:
-            logger.error(f"Network error fetching {timeframe} data: {str(e)}")
-        except ccxt.ExchangeError as e:
-            logger.error(f"Exchange error fetching {timeframe} data: {str(e)}")
+        except (ccxt.NetworkError, ccxt.ExchangeError) as e:
+            logger.error(f"Exchange error ({timeframe}): {str(e)}")
+            # Attempt fallback to smaller timeframe
+            if timeframe != '1m':
+                logger.info(f"Attempting fallback to 1m for {self.symbol}")
+                return self._fetch_timeframe_via_rest('1m', historical_days)
+            return pd.DataFrame()
         except Exception as e:
-            logger.error(f"Unexpected error fetching {timeframe} data: {str(e)}")
-            
-        return pd.DataFrame()
+            logger.error(f"Critical error ({timeframe}): {str(e)}")
+            return pd.DataFrame()
 
     # ====================
     # DATA PROCESSING
@@ -166,6 +155,7 @@ class DataFetcher:
                  'range', 'body', 'candle_type', 'fvg']]
     
     def _detect_fvg(self, df: pd.DataFrame) -> pd.DataFrame:
+
         """Detect Fair Value Gaps (FVG) in price series"""
         try:
             if len(df) < 3:
@@ -185,3 +175,40 @@ class DataFetcher:
             df['fvg'] = 0
             
         return df
+    
+    
+class MultiTimeframeFetcher:
+    def __init__(self, symbol: str, timeframes: dict, exchange: str):
+        self.symbol = symbol
+        self.timeframes = timeframes
+        self.exchange = exchange
+        
+    def get_candles(self) -> dict:
+        """Fetch data for multiple timeframes with prioritization"""
+        results = {}
+        priorities = {
+            'primary': 1,  # Highest priority
+            'confirm': 2,
+            'entry': 3     # Lowest priority
+        }
+        
+        # Fetch in priority order
+        for tf_key in sorted(self.timeframes.keys(), key=lambda x: priorities.get(x, 10)):
+            try:
+                tf_value = self.timeframes[tf_key]
+                fetcher = DataFetcher(self.symbol, tf_value, self.exchange)
+                df = fetcher.get_candles()
+                
+                if df.empty:
+                    logger.warning(f"Empty data for {tf_key} ({tf_value})")
+                    # If primary fails, abort entire process
+                    if tf_key == 'primary':
+                        return {}
+                else:
+                    results[tf_key] = df
+            except Exception as e:
+                logger.error(f"Error fetching {tf_key} ({tf_value}): {str(e)}")
+                if tf_key == 'primary':
+                    return {}
+        
+        return results    

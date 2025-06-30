@@ -10,7 +10,7 @@ def main():
         initial_sidebar_state="expanded"
     )
     
-    st.title("PeiroTahlil v4.0 - Intelligent Crypto Trading Engine")
+    st.title("PeiroTahlil v5.0 - Intelligent Crypto Trading Engine")
     
     # Sidebar inputs
     with st.sidebar:
@@ -132,6 +132,7 @@ def main():
                         st.write("Could not retrieve AI recommendation.")
             else:
                 st.error("Failed to complete analysis. Please check the console/logs for details.")
+            
 
 if __name__ == "__main__":
     main()

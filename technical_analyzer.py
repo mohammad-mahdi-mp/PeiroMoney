@@ -11,11 +11,15 @@ logger = setup_logger()
 class TechnicalAnalyzer:
     def __init__(self, df: pd.DataFrame, timeframes: dict = None):
         # Existing initialization
+        if not isinstance(df, pd.DataFrame):
+            raise TypeError(f"TechnicalAnalyzer requires DataFrame, got {type(df)}")
+            
         if df.empty:
-            raise ValueError("Empty dataframe provided for technical analysis")
+            logger.warning("Empty dataframe provided for technical analysis")
         if len(df) < max(Config.MA_PERIODS):
             logger.warning(f"Insufficient data for technical analysis. Got {len(df)} points")
         self.df = df.copy()
+        self.trendlines = []
         self.calculate_all_indicators()
         self.detect_candlestick_patterns()
         self.calculate_volume_profile()
@@ -24,7 +28,6 @@ class TechnicalAnalyzer:
         self.identify_liquidity_pools()
         self.detect_market_structure()
         self.auto_draw_trendlines()
-        self.trendlines = []
         
         # New multi-timeframe support
         self.timeframes = {}
@@ -41,6 +44,12 @@ class TechnicalAnalyzer:
         self.price_bridges = []
         self.liquidation_clusters = []
         self.fib_levels = {}
+
+    def _validate_required_columns(self):
+        required_columns = ['open', 'high', 'low', 'close', 'volume', 'timestamp']
+        missing = [col for col in required_columns if col not in self.df.columns]
+        if missing:
+            raise ValueError(f"DataFrame is missing required columns for technical analysis: {missing}")
 
     def calculate_pivot_points(self):
         """Calculate weekly/monthly pivot points"""
@@ -67,12 +76,12 @@ class TechnicalAnalyzer:
         # Merge with main dataframe
         self.df = self.df.merge(
             weekly_df[['pivot', 'r3', 's3']], 
-            left_on=self.df['timestamp'].dt.to_period('W').dt.start_time,
+            left_on=self.df['timestamp'].dt.to_period('W').apply(lambda r: r.start_time),
             right_index=True, 
             how='left'
         ).merge(
             monthly_df[['pivot_monthly', 'r3_monthly', 's3_monthly']],
-            left_on=self.df['timestamp'].dt.to_period('M').dt.start_time,
+            left_on=self.df['timestamp'].dt.to_period('M').apply(lambda r: r.start_time),
             right_index=True,
             how='left'
         ).ffill()
@@ -130,7 +139,8 @@ class TechnicalAnalyzer:
     def detect_liquidation_clusters(self, threshold=0.95):
         """Detect liquidation clusters using Bybit data"""
         if 'long_liquidations' not in self.df.columns:
-            return []
+            self.liquidation_clusters = []
+            return
         
         # Calculate liquidation density
         price_bins = pd.cut(self.df['close'], bins=50)
@@ -178,6 +188,7 @@ class TechnicalAnalyzer:
 #.
     def calculate_all_indicators(self):
         """Calculate all technical indicators"""
+        self._validate_required_columns()
         # Moving Averages
         for period in Config.MA_PERIODS:
             self.df[f'ma_{period}'] = ta.trend.sma_indicator(self.df['close'], window=period)
@@ -310,7 +321,7 @@ class TechnicalAnalyzer:
     def _add_vwap(self):
         """Add Volume Weighted Average Price"""
         # Only for intraday timeframes
-        if self.df['timestamp'].dt.floor('d').nunique() > 1:  # Check if intraday
+        if self.df['timestamp'].dt.floor('d').nunique() == 1:  # Check if intraday (single day)
             vwap = (self.df['volume'] * (self.df['high'] + self.df['low'] + self.df['close']) / 3).cumsum() / self.df['volume'].cumsum()
             self.df['vwap'] = vwap
 #.            
