@@ -7736,3 +7736,54 @@ Request ID: YG6acU10YS5g6THsqzTTG6SyBxLP6AGr5QHxAbHLU38RVtQPqXQZOA==
 2025-07-06 20:22:10,559 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
 2025-07-06 20:22:10,562 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
 2025-07-06 20:22:10,564 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:22:39,166 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107316.09746835445)]
+2025-07-06 20:22:39,177 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:22:39,184 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107316.09746835445)]
+2025-07-06 20:22:39,332 - CryptoAnalyzer - WARNING - [technical_analyzer.py:33] - [N/A] - Insufficient data for technical analysis. Got 180 points
+2025-07-06 20:22:39,344 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 20:22:39,351 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:22:39,362 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 20:22:39,424 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.81076923077), np.float64(107467.9754385965)]
+2025-07-06 20:22:39,435 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:22:39,442 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.81076923077), np.float64(107467.9754385965)]
+2025-07-06 20:24:21,892 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107316.09746835445)]
+2025-07-06 20:24:21,903 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:24:21,910 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107316.09746835445)]
+2025-07-06 20:24:22,052 - CryptoAnalyzer - WARNING - [technical_analyzer.py:33] - [N/A] - Insufficient data for technical analysis. Got 180 points
+2025-07-06 20:24:22,068 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 20:24:22,079 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:24:22,089 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 20:24:22,150 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.81076923077), np.float64(107467.9754385965)]
+2025-07-06 20:24:22,167 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:24:22,175 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.81076923077), np.float64(107467.9754385965)]
+2025-07-06 20:25:24,155 - CryptoAnalyzer - WARNING - [technical_analyzer.py:33] - [N/A] - Insufficient data for technical analysis. Got 180 points
+2025-07-06 20:25:24,173 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 20:25:24,188 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:25:24,197 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 20:25:24,247 - CryptoAnalyzer - WARNING - [technical_analyzer.py:33] - [N/A] - Insufficient data for technical analysis. Got 180 points
+2025-07-06 20:25:24,274 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 20:25:24,285 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:25:24,293 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 20:25:24,348 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.81076923077), np.float64(107467.9754385965)]
+2025-07-06 20:25:24,364 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:25:24,372 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.81076923077), np.float64(107467.9754385965)]
+2025-07-06 20:26:09,242 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.81076923077), np.float64(107467.9754385965)]
+2025-07-06 20:26:09,254 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:26:09,262 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.81076923077), np.float64(107467.9754385965)]
+2025-07-06 20:26:09,697 - CryptoAnalyzer - WARNING - [technical_analyzer.py:33] - [N/A] - Insufficient data for technical analysis. Got 180 points
+2025-07-06 20:26:09,709 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 20:26:09,721 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:26:09,731 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 20:26:09,782 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.81076923077), np.float64(107467.9754385965)]
+2025-07-06 20:26:09,794 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:26:09,802 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.81076923077), np.float64(107467.9754385965)]
+2025-07-06 20:27:28,158 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109596.74193548386), np.float64(109748.10506329115), np.float64(109534.03703703704)]
+2025-07-06 20:27:28,175 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:27:28,183 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109596.74193548386), np.float64(109748.10506329115), np.float64(109534.03703703704)]
+2025-07-06 20:27:28,946 - CryptoAnalyzer - WARNING - [technical_analyzer.py:33] - [N/A] - Insufficient data for technical analysis. Got 180 points
+2025-07-06 20:27:28,962 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 20:27:28,971 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:27:28,987 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 20:27:29,045 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.81076923077), np.float64(107467.9754385965)]
+2025-07-06 20:27:29,058 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 20:27:29,065 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.81076923077), np.float64(107467.9754385965)]
