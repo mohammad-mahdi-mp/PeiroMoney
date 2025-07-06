@@ -26,6 +26,6 @@ class Config:
         'binance': 'ccxt.binance'
     }
     TIMEFRAME_DAYS_MAP = {
-        '1m': 1, '5m': 2, '15m': 3, '30m': 5,
-        '1h': 7, '4h': 14, '1d': 90, '1w': 180
+        '1m': 3, '5m': 5, '15m': 7, '30m': 14,
+        '1h': 30, '4h': 90, '1d': 180, '1w': 365
     }

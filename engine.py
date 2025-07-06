@@ -68,6 +68,10 @@ class IntelligentTradingEngine:
         self.latest = self.df.iloc[-1]
         self.context = self._determine_market_context()
         self.mta = None  # Will be set separately for multi-timeframe analysis
+    
+    def get_multi_timeframe_analyzer(self) -> MultiTimeframeAnalyzer:
+        return self.mta
+
     def _determine_market_context(self) -> Dict[str, Any]:
         """Determine market context with strength assessment"""
         context = {
@@ -109,6 +113,13 @@ class IntelligentTradingEngine:
             'stop_loss': None,
             'targets': []
         }
+        # Get multi-timeframe analyzer if available
+        mta = self.get_multi_timeframe_analyzer()
+        if mta:
+            alignment = mta.check_timeframe_alignment()
+            # Add alignment info to context
+            self.context['multi_timeframe_aligned'] = alignment['aligned']
+            self.context['confirmation_strength'] = alignment['confirmation_strength']
         
         # Evaluate scenarios based on market context
         if self.context['type'] in ['Uptrend', 'Downtrend']:

@@ -9,6 +9,19 @@ from utils import setup_logger
 logger = setup_logger()
 
 class TechnicalAnalyzer:
+    def clean_financial_data(df: pd.DataFrame) -> pd.DataFrame:
+        """پاک‌سازی داده‌های مالی از مقادیر نامعتبر"""
+        # جایگزینی مقادیر بینهایت
+        df.replace([np.inf, -np.inf], np.nan, inplace=True)
+        
+        # پر کردن مقادیر خالی با روش‌های مناسب
+        df['close'] = df['close'].ffill().bfill()
+        for col in ['open', 'high', 'low', 'volume']:
+            df[col] = df[col].fillna(df['close'])
+        
+        # حذف ردیف‌های باقیمانده با مقادیر خالی
+        df.dropna(subset=['close'], inplace=True)
+        return df
     def __init__(self, df: pd.DataFrame, timeframes: dict = None):
         # Existing initialization
         if not isinstance(df, pd.DataFrame):
@@ -52,9 +65,16 @@ class TechnicalAnalyzer:
             raise ValueError(f"DataFrame is missing required columns for technical analysis: {missing}")
 
     def calculate_pivot_points(self):
-        """Calculate weekly/monthly pivot points"""
+        """Calculate weekly/monthly pivot points with proper timezone handling"""
+        # Ensure timestamp is in UTC
+        df_utc = self.df.copy()
+        if not df_utc['timestamp'].dt.tz:
+            df_utc['timestamp'] = df_utc['timestamp'].dt.tz_localize('UTC')
+        else:
+            df_utc['timestamp'] = df_utc['timestamp'].dt.tz_convert('UTC')
+
         # Weekly pivots
-        weekly_df = self.df.resample('W', on='timestamp').agg({
+        weekly_df = df_utc.resample('W-MON', on='timestamp').agg({
             'high': 'max',
             'low': 'min',
             'close': 'last'
@@ -64,7 +84,7 @@ class TechnicalAnalyzer:
         weekly_df['s3'] = weekly_df['pivot'] - (weekly_df['high'] - weekly_df['low']) * 1.5
         
         # Monthly pivots
-        monthly_df = self.df.resample('M', on='timestamp').agg({
+        monthly_df = df_utc.resample('MS', on='timestamp').agg({
             'high': 'max',
             'low': 'min',
             'close': 'last'
@@ -72,20 +92,32 @@ class TechnicalAnalyzer:
         monthly_df['pivot_monthly'] = (monthly_df['high'] + monthly_df['low'] + monthly_df['close']) / 3
         monthly_df['r3_monthly'] = monthly_df['pivot_monthly'] + (monthly_df['high'] - monthly_df['low']) * 1.5
         monthly_df['s3_monthly'] = monthly_df['pivot_monthly'] - (monthly_df['high'] - monthly_df['low']) * 1.5
-
+        
+        # Create merge keys (UTC timestamps)
+        self.df['week_start_utc'] = self.df['timestamp'].dt.tz_convert('UTC').dt.to_period('W').apply(lambda r: r.start_time.tz_localize('UTC'))
+        self.df['month_start_utc'] = self.df['timestamp'].dt.tz_convert('UTC').dt.to_period('M').apply(lambda r: r.start_time.tz_localize('UTC'))
+        
+        # Convert resampled indices to UTC
+        weekly_df.index = weekly_df.index.tz_convert('UTC')
+        monthly_df.index = monthly_df.index.tz_convert('UTC')
+        
         # Merge with main dataframe
         self.df = self.df.merge(
             weekly_df[['pivot', 'r3', 's3']], 
-            left_on=self.df['timestamp'].dt.to_period('W').apply(lambda r: r.start_time),
+            left_on='week_start_utc',
             right_index=True, 
             how='left'
         ).merge(
             monthly_df[['pivot_monthly', 'r3_monthly', 's3_monthly']],
-            left_on=self.df['timestamp'].dt.to_period('M').apply(lambda r: r.start_time),
+            left_on='month_start_utc',
             right_index=True,
             how='left'
-        ).ffill()
-#.
+        )
+        
+        # Forward fill missing values
+        pivot_cols = ['pivot', 'r3', 's3', 'pivot_monthly', 'r3_monthly', 's3_monthly']
+        self.df[pivot_cols] = self.df[pivot_cols].ffill()
+        
     def identify_price_bridges(self):
         """Identify price bridges with confluence scoring"""
         # Collect all relevant levels
@@ -135,6 +167,7 @@ class TechnicalAnalyzer:
                 'fib_confluence': fib_confluence,
                 'volume_profile': volume_confluence
             })
+        return self.price_bridges    
 #.
     def detect_liquidation_clusters(self, threshold=0.95):
         """Detect liquidation clusters using Bybit data"""
@@ -156,6 +189,7 @@ class TechnicalAnalyzer:
             'price_level': row.name.mid,
             'liquidation_score': row['total']
         } for idx, row in clusters.iterrows()]
+        return self.liquidation_clusters
 #.
     def calculate_fibonacci_bridge(self):
         """Calculate Fibonacci retracement levels"""

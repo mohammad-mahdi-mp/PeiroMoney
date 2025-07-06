@@ -6046,3 +6046,1693 @@ Request ID: xgTD-5Wu9swgqsdtPIADfu1iymp1nWCa3rgIkroW3F8-1tbxqHc6CQ==
 2025-06-28 14:42:14,749 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_pivots'
 2025-06-28 14:42:14,749 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_pivots'
 2025-06-28 14:42:14,749 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_pivots'
+2025-06-30 13:42:12,425 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:42:12,425 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:42:12,425 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:42:12,425 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:42:12,425 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:42:12,425 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:42:12,425 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 84 points
+2025-06-30 13:42:12,441 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,441 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,441 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,441 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,441 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,441 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,441 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,447 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,447 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,447 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,447 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,447 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,447 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,447 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,456 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,456 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,456 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,456 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,456 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,456 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,456 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107392.24736842106), np.float64(104957.03), np.float64(106939.32222222222)]
+2025-06-30 13:42:12,487 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 90 points
+2025-06-30 13:42:12,487 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 90 points
+2025-06-30 13:42:12,487 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 90 points
+2025-06-30 13:42:12,487 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 90 points
+2025-06-30 13:42:12,487 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 90 points
+2025-06-30 13:42:12,487 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 90 points
+2025-06-30 13:42:12,487 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 90 points
+2025-06-30 13:42:12,504 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,504 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,504 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,504 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,504 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,504 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,504 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,511 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,511 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,511 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,511 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,511 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,511 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,511 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,526 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,526 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,526 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,526 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,526 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,526 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,526 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105443.91176470589), np.float64(103776.16923076923), np.float64(84136.92)]
+2025-06-30 13:42:12,567 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,567 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,567 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,567 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,567 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,567 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,567 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,576 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,576 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,576 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,576 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,576 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,576 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,576 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:42:12,587 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,587 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,587 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,587 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,587 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,587 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,587 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107344.12777777777), np.float64(107454.77037037037), np.float64(108143.36249999999)]
+2025-06-30 13:42:12,708 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:42:12,708 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:42:12,708 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:42:12,708 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:42:12,708 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:42:12,708 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:42:12,708 - CryptoAnalyzer - ERROR - DeepSeek AI Error: Out of range float values are not JSON compliant
+2025-06-30 13:42:12,954 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_pivots'
+2025-06-30 13:42:12,954 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_pivots'
+2025-06-30 13:42:12,954 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_pivots'
+2025-06-30 13:42:12,954 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_pivots'
+2025-06-30 13:42:12,954 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_pivots'
+2025-06-30 13:42:12,954 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_pivots'
+2025-06-30 13:42:12,954 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_pivots'
+2025-06-30 13:49:59,550 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,550 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,550 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,550 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,550 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,550 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,550 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,564 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,564 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,564 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,564 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,564 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,564 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,564 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,575 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,575 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,575 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,575 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,575 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,575 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,575 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107245.42698412697)]
+2025-06-30 13:49:59,715 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 13:49:59,715 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 13:49:59,715 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 13:49:59,715 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 13:49:59,715 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 13:49:59,715 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 13:49:59,715 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 13:49:59,732 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,732 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,732 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,732 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,732 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,732 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,732 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,740 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,740 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,740 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,740 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,740 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,740 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,740 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,750 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,750 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,750 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,750 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,750 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,750 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,750 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 13:49:59,813 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,813 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,813 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,813 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,813 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,813 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,813 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,831 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,831 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,831 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,831 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,831 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,831 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,831 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 13:49:59,847 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,847 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,847 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,847 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,847 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,847 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:49:59,847 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.62298387097), np.float64(107686.1488888889), np.float64(106914.00588235297)]
+2025-06-30 13:50:00,767 - CryptoAnalyzer - ERROR - DeepSeek AI Error: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/analyze (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000254B8FB6AA0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-06-30 13:50:00,767 - CryptoAnalyzer - ERROR - DeepSeek AI Error: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/analyze (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000254B8FB6AA0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-06-30 13:50:00,767 - CryptoAnalyzer - ERROR - DeepSeek AI Error: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/analyze (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000254B8FB6AA0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-06-30 13:50:00,767 - CryptoAnalyzer - ERROR - DeepSeek AI Error: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/analyze (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000254B8FB6AA0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-06-30 13:50:00,767 - CryptoAnalyzer - ERROR - DeepSeek AI Error: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/analyze (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000254B8FB6AA0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-06-30 13:50:00,767 - CryptoAnalyzer - ERROR - DeepSeek AI Error: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/analyze (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000254B8FB6AA0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-06-30 13:50:00,767 - CryptoAnalyzer - ERROR - DeepSeek AI Error: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/analyze (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000254B8FB6AA0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-06-30 13:50:01,737 - CryptoAnalyzer - CRITICAL - Analysis failed: You are trying to merge on datetime64[ns] and datetime64[ns, UTC] columns for key 'None'. If you wish to proceed you should use pd.concat
+2025-06-30 13:50:01,737 - CryptoAnalyzer - CRITICAL - Analysis failed: You are trying to merge on datetime64[ns] and datetime64[ns, UTC] columns for key 'None'. If you wish to proceed you should use pd.concat
+2025-06-30 13:50:01,737 - CryptoAnalyzer - CRITICAL - Analysis failed: You are trying to merge on datetime64[ns] and datetime64[ns, UTC] columns for key 'None'. If you wish to proceed you should use pd.concat
+2025-06-30 13:50:01,737 - CryptoAnalyzer - CRITICAL - Analysis failed: You are trying to merge on datetime64[ns] and datetime64[ns, UTC] columns for key 'None'. If you wish to proceed you should use pd.concat
+2025-06-30 13:50:01,737 - CryptoAnalyzer - CRITICAL - Analysis failed: You are trying to merge on datetime64[ns] and datetime64[ns, UTC] columns for key 'None'. If you wish to proceed you should use pd.concat
+2025-06-30 13:50:01,737 - CryptoAnalyzer - CRITICAL - Analysis failed: You are trying to merge on datetime64[ns] and datetime64[ns, UTC] columns for key 'None'. If you wish to proceed you should use pd.concat
+2025-06-30 13:50:01,737 - CryptoAnalyzer - CRITICAL - Analysis failed: You are trying to merge on datetime64[ns] and datetime64[ns, UTC] columns for key 'None'. If you wish to proceed you should use pd.concat
+2025-06-30 14:18:43,547 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,547 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,547 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,547 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,547 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,547 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,547 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,560 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,560 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,560 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,560 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,560 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,560 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,560 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,573 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,573 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,573 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,573 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,573 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,573 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,573 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105229.24800000002), np.float64(103615.51139240505), np.float64(107248.28730158729)]
+2025-06-30 14:18:43,695 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 14:18:43,695 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 14:18:43,695 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 14:18:43,695 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 14:18:43,695 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 14:18:43,695 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 14:18:43,695 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-06-30 14:18:43,710 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,710 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,710 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,710 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,710 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,710 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,710 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,718 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,718 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,718 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,718 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,718 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,718 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,718 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,728 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,728 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,728 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,728 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,728 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,728 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,728 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96558.20434782607), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-06-30 14:18:43,789 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,789 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,789 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,789 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,789 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,789 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,789 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,807 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,807 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,807 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,807 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,807 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,807 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,807 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-06-30 14:18:43,818 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,818 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,818 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,818 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,818 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,818 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:43,818 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107296.04412955465), np.float64(107682.60107526882), np.float64(106914.00588235297)]
+2025-06-30 14:18:44,514 - CryptoAnalyzer - CRITICAL - Analysis failed: Already tz-aware, use tz_convert to convert.
+2025-06-30 14:18:44,514 - CryptoAnalyzer - CRITICAL - Analysis failed: Already tz-aware, use tz_convert to convert.
+2025-06-30 14:18:44,514 - CryptoAnalyzer - CRITICAL - Analysis failed: Already tz-aware, use tz_convert to convert.
+2025-06-30 14:18:44,514 - CryptoAnalyzer - CRITICAL - Analysis failed: Already tz-aware, use tz_convert to convert.
+2025-06-30 14:18:44,514 - CryptoAnalyzer - CRITICAL - Analysis failed: Already tz-aware, use tz_convert to convert.
+2025-06-30 14:18:44,514 - CryptoAnalyzer - CRITICAL - Analysis failed: Already tz-aware, use tz_convert to convert.
+2025-06-30 14:18:44,514 - CryptoAnalyzer - CRITICAL - Analysis failed: Already tz-aware, use tz_convert to convert.
+2025-07-02 15:17:39,308 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_all_indicators'
+2025-07-02 15:17:39,308 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_all_indicators'
+2025-07-02 15:17:39,308 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_all_indicators'
+2025-07-02 15:17:39,308 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_all_indicators'
+2025-07-02 15:17:39,308 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_all_indicators'
+2025-07-02 15:17:39,308 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_all_indicators'
+2025-07-02 15:17:39,308 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'calculate_all_indicators'
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,446 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,460 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,471 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107247.57183098592)]
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,608 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,628 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,640 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,652 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,711 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,725 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:31,736 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107489.34303797469), np.float64(107174.72448979592)]
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:19:32,563 - CryptoAnalyzer - CRITICAL - Analysis failed: 'TechnicalAnalyzer' object has no attribute 'current_trend'
+2025-07-02 15:28:08,827 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,827 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,827 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,827 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,827 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,827 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,827 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,838 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:08,838 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:08,838 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:08,838 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:08,838 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:08,838 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:08,838 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:08,846 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,846 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,846 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,846 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,846 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,846 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:08,846 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.41690140846)]
+2025-07-02 15:28:09,013 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:28:09,013 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:28:09,013 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:28:09,013 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:28:09,013 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:28:09,013 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:28:09,013 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:28:09,030 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,030 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,030 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,030 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,030 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,030 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,030 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,039 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,039 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,039 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,039 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,039 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,039 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,039 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,055 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,055 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,055 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,055 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,055 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,055 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,055 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:28:09,127 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,127 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,127 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,127 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,127 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,127 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,127 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:28:09,153 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,153 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,153 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,153 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,153 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,153 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:09,153 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.90671140938), np.float64(107490.23417721518), np.float64(107174.72448979592)]
+2025-07-02 15:28:10,077 - CryptoAnalyzer - CRITICAL - Analysis failed: IntelligentTradingEngine.__init__() got an unexpected keyword argument 'primary_analyzer'
+2025-07-02 15:28:10,077 - CryptoAnalyzer - CRITICAL - Analysis failed: IntelligentTradingEngine.__init__() got an unexpected keyword argument 'primary_analyzer'
+2025-07-02 15:28:10,077 - CryptoAnalyzer - CRITICAL - Analysis failed: IntelligentTradingEngine.__init__() got an unexpected keyword argument 'primary_analyzer'
+2025-07-02 15:28:10,077 - CryptoAnalyzer - CRITICAL - Analysis failed: IntelligentTradingEngine.__init__() got an unexpected keyword argument 'primary_analyzer'
+2025-07-02 15:28:10,077 - CryptoAnalyzer - CRITICAL - Analysis failed: IntelligentTradingEngine.__init__() got an unexpected keyword argument 'primary_analyzer'
+2025-07-02 15:28:10,077 - CryptoAnalyzer - CRITICAL - Analysis failed: IntelligentTradingEngine.__init__() got an unexpected keyword argument 'primary_analyzer'
+2025-07-02 15:28:10,077 - CryptoAnalyzer - CRITICAL - Analysis failed: IntelligentTradingEngine.__init__() got an unexpected keyword argument 'primary_analyzer'
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,267 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,278 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,288 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105251.43076923078), np.float64(103615.51139240505), np.float64(107248.63750000001)]
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,418 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,440 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,451 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,468 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(96538.24227272728), np.float64(102000.21181818182), np.float64(103838.24666666667)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,529 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,543 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:45,559 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(107324.39399999999), np.float64(107489.39875000001), np.float64(107174.72448979592)]
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-02 15:57:46,276 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-04 18:57:48,168 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: Asw9-S1q2wo0Ws17wdfzgZLLAGcbQGweSVoNucdTmF9BK367sA2PJw==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,168 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: Asw9-S1q2wo0Ws17wdfzgZLLAGcbQGweSVoNucdTmF9BK367sA2PJw==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,168 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: Asw9-S1q2wo0Ws17wdfzgZLLAGcbQGweSVoNucdTmF9BK367sA2PJw==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,168 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: Asw9-S1q2wo0Ws17wdfzgZLLAGcbQGweSVoNucdTmF9BK367sA2PJw==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,168 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: Asw9-S1q2wo0Ws17wdfzgZLLAGcbQGweSVoNucdTmF9BK367sA2PJw==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,168 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: Asw9-S1q2wo0Ws17wdfzgZLLAGcbQGweSVoNucdTmF9BK367sA2PJw==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,168 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: Asw9-S1q2wo0Ws17wdfzgZLLAGcbQGweSVoNucdTmF9BK367sA2PJw==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,175 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:48,175 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:48,175 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:48,175 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:48,175 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:48,175 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:48,175 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:48,397 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: LGMdkPcyhfVGsjVev28olfufswyMjVYjz6RxsjbYg_oC2Hkm2KX_yA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,397 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: LGMdkPcyhfVGsjVev28olfufswyMjVYjz6RxsjbYg_oC2Hkm2KX_yA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,397 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: LGMdkPcyhfVGsjVev28olfufswyMjVYjz6RxsjbYg_oC2Hkm2KX_yA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,397 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: LGMdkPcyhfVGsjVev28olfufswyMjVYjz6RxsjbYg_oC2Hkm2KX_yA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,397 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: LGMdkPcyhfVGsjVev28olfufswyMjVYjz6RxsjbYg_oC2Hkm2KX_yA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,397 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: LGMdkPcyhfVGsjVev28olfufswyMjVYjz6RxsjbYg_oC2Hkm2KX_yA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,397 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: LGMdkPcyhfVGsjVev28olfufswyMjVYjz6RxsjbYg_oC2Hkm2KX_yA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:48,406 - CryptoAnalyzer - WARNING - Empty data for primary (4h)
+2025-07-04 18:57:48,406 - CryptoAnalyzer - WARNING - Empty data for primary (4h)
+2025-07-04 18:57:48,406 - CryptoAnalyzer - WARNING - Empty data for primary (4h)
+2025-07-04 18:57:48,406 - CryptoAnalyzer - WARNING - Empty data for primary (4h)
+2025-07-04 18:57:48,406 - CryptoAnalyzer - WARNING - Empty data for primary (4h)
+2025-07-04 18:57:48,406 - CryptoAnalyzer - WARNING - Empty data for primary (4h)
+2025-07-04 18:57:48,406 - CryptoAnalyzer - WARNING - Empty data for primary (4h)
+2025-07-04 18:57:48,418 - CryptoAnalyzer - ERROR - Primary data unavailable
+2025-07-04 18:57:48,418 - CryptoAnalyzer - ERROR - Primary data unavailable
+2025-07-04 18:57:48,418 - CryptoAnalyzer - ERROR - Primary data unavailable
+2025-07-04 18:57:48,418 - CryptoAnalyzer - ERROR - Primary data unavailable
+2025-07-04 18:57:48,418 - CryptoAnalyzer - ERROR - Primary data unavailable
+2025-07-04 18:57:48,418 - CryptoAnalyzer - ERROR - Primary data unavailable
+2025-07-04 18:57:48,418 - CryptoAnalyzer - ERROR - Primary data unavailable
+2025-07-04 18:57:48,423 - CryptoAnalyzer - WARNING - Using emergency fallback to primary timeframe
+2025-07-04 18:57:48,423 - CryptoAnalyzer - WARNING - Using emergency fallback to primary timeframe
+2025-07-04 18:57:48,423 - CryptoAnalyzer - WARNING - Using emergency fallback to primary timeframe
+2025-07-04 18:57:48,423 - CryptoAnalyzer - WARNING - Using emergency fallback to primary timeframe
+2025-07-04 18:57:48,423 - CryptoAnalyzer - WARNING - Using emergency fallback to primary timeframe
+2025-07-04 18:57:48,423 - CryptoAnalyzer - WARNING - Using emergency fallback to primary timeframe
+2025-07-04 18:57:48,423 - CryptoAnalyzer - WARNING - Using emergency fallback to primary timeframe
+2025-07-04 18:57:49,207 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: 7QPuay-WCVerbquisfd3QogDpzi2DU7Xm7wZJvwTOKlyvw8kVz9ZTA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,207 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: 7QPuay-WCVerbquisfd3QogDpzi2DU7Xm7wZJvwTOKlyvw8kVz9ZTA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,207 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: 7QPuay-WCVerbquisfd3QogDpzi2DU7Xm7wZJvwTOKlyvw8kVz9ZTA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,207 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: 7QPuay-WCVerbquisfd3QogDpzi2DU7Xm7wZJvwTOKlyvw8kVz9ZTA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,207 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: 7QPuay-WCVerbquisfd3QogDpzi2DU7Xm7wZJvwTOKlyvw8kVz9ZTA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,207 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: 7QPuay-WCVerbquisfd3QogDpzi2DU7Xm7wZJvwTOKlyvw8kVz9ZTA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,207 - CryptoAnalyzer - ERROR - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: 7QPuay-WCVerbquisfd3QogDpzi2DU7Xm7wZJvwTOKlyvw8kVz9ZTA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,213 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:49,213 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:49,213 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:49,213 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:49,213 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:49,213 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:49,213 - CryptoAnalyzer - INFO - Attempting fallback to 1m for BTC/USDT
+2025-07-04 18:57:49,525 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: D_SUK3gQyuCoGQxH1htfirxm-aqe1ztGatFrQ_oH8ENFvESH7PN7Lg==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,525 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: D_SUK3gQyuCoGQxH1htfirxm-aqe1ztGatFrQ_oH8ENFvESH7PN7Lg==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,525 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: D_SUK3gQyuCoGQxH1htfirxm-aqe1ztGatFrQ_oH8ENFvESH7PN7Lg==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,525 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: D_SUK3gQyuCoGQxH1htfirxm-aqe1ztGatFrQ_oH8ENFvESH7PN7Lg==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,525 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: D_SUK3gQyuCoGQxH1htfirxm-aqe1ztGatFrQ_oH8ENFvESH7PN7Lg==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,525 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: D_SUK3gQyuCoGQxH1htfirxm-aqe1ztGatFrQ_oH8ENFvESH7PN7Lg==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,525 - CryptoAnalyzer - ERROR - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: D_SUK3gQyuCoGQxH1htfirxm-aqe1ztGatFrQ_oH8ENFvESH7PN7Lg==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-04 18:57:49,536 - CryptoAnalyzer - ERROR - Fallback failed: No primary data
+2025-07-04 18:57:49,536 - CryptoAnalyzer - ERROR - Fallback failed: No primary data
+2025-07-04 18:57:49,536 - CryptoAnalyzer - ERROR - Fallback failed: No primary data
+2025-07-04 18:57:49,536 - CryptoAnalyzer - ERROR - Fallback failed: No primary data
+2025-07-04 18:57:49,536 - CryptoAnalyzer - ERROR - Fallback failed: No primary data
+2025-07-04 18:57:49,536 - CryptoAnalyzer - ERROR - Fallback failed: No primary data
+2025-07-04 18:57:49,536 - CryptoAnalyzer - ERROR - Fallback failed: No primary data
+2025-07-04 18:58:52,572 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,572 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,572 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,572 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,572 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,572 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,572 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,585 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,585 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,585 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,585 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,585 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,585 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,585 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,595 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,595 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,595 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,595 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,595 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,595 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,595 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107256.44305555556)]
+2025-07-04 18:58:52,740 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 18:58:52,740 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 18:58:52,740 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 18:58:52,740 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 18:58:52,740 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 18:58:52,740 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 18:58:52,740 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 18:58:52,755 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,755 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,755 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,755 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,755 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,755 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,755 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,764 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,764 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,764 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,764 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,764 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,764 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,764 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,777 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,777 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,777 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,777 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,777 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,777 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,777 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 18:58:52,840 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,840 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,840 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,840 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,840 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,840 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,840 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,854 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,854 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,854 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,854 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,854 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,854 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,854 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 18:58:52,862 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,862 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,862 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,862 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,862 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,862 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:52,862 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107438.25473684212), np.float64(107234.85859375)]
+2025-07-04 18:58:53,684 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-04 18:58:53,684 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-04 18:58:53,684 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-04 18:58:53,684 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-04 18:58:53,684 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-04 18:58:53,684 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-04 18:58:53,684 - CryptoAnalyzer - CRITICAL - Analysis failed: 'RiskManager' object has no attribute 'calculate_bridge_position'
+2025-07-04 23:44:51,924 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,924 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,924 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,924 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,924 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,924 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,924 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,938 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:51,938 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:51,938 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:51,938 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:51,938 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:51,938 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:51,938 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:51,954 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,954 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,954 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,954 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,954 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,954 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:51,954 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107261.10540540541)]
+2025-07-04 23:44:52,104 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:44:52,104 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:44:52,104 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:44:52,104 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:44:52,104 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:44:52,104 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:44:52,104 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:44:52,123 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,123 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,123 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,123 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,123 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,123 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,123 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,140 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,188 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,188 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,188 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,188 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,188 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,188 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,188 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:44:52,260 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,260 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,260 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,260 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,260 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,260 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,260 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,277 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,277 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,277 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,277 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,277 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,277 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,277 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:44:52,285 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,285 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,285 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,285 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,285 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,285 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:52,285 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.5893939394), np.float64(107441.49393939394)]
+2025-07-04 23:44:53,134 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:44:53,134 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:44:53,134 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:44:53,134 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:44:53,134 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:44:53,134 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:44:53,134 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,752 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,762 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,772 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107262.3391891892)]
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,885 - CryptoAnalyzer - WARNING - Insufficient data for technical analysis. Got 180 points
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,899 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,909 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,921 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,974 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:14,988 - CryptoAnalyzer - INFO - Calculated all technical indicators
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,000 - CryptoAnalyzer - DEBUG - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107692.87313432837), np.float64(107441.49393939394)]
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-04 23:56:15,633 - CryptoAnalyzer - CRITICAL - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-06 18:59:53,480 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 18:59:58,538 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 18:59:58,540 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 18:59:58,542 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 19:00:05,220 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 19:00:05,222 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 19:00:05,224 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 19:00:31,607 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:385] - [N/A] - Volume profile calculated with levels: [np.float64(107680.1142857143), np.float64(107185.00404040402), np.float64(104868.63493975902)]
+2025-07-06 19:00:31,622 - CryptoAnalyzer - INFO - [technical_analyzer.py:286] - [N/A] - Calculated all technical indicators
+2025-07-06 19:00:31,628 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:385] - [N/A] - Volume profile calculated with levels: [np.float64(107680.1142857143), np.float64(107185.00404040402), np.float64(104868.63493975902)]
+2025-07-06 19:00:32,041 - CryptoAnalyzer - WARNING - [technical_analyzer.py:33] - [N/A] - Insufficient data for technical analysis. Got 180 points
+2025-07-06 19:00:32,058 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:385] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 19:00:32,068 - CryptoAnalyzer - INFO - [technical_analyzer.py:286] - [N/A] - Calculated all technical indicators
+2025-07-06 19:00:32,078 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:385] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 19:00:32,143 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:385] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107695.14925373135), np.float64(107470.76999999999)]
+2025-07-06 19:00:32,158 - CryptoAnalyzer - INFO - [technical_analyzer.py:286] - [N/A] - Calculated all technical indicators
+2025-07-06 19:00:32,165 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:385] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107695.14925373135), np.float64(107470.76999999999)]
+2025-07-06 19:00:32,989 - CryptoAnalyzer - CRITICAL - [system.py:148] - [N/A] - Analysis failed: 'NoneType' object is not subscriptable
+2025-07-06 19:28:19,727 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 19:28:23,493 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 19:28:23,495 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 19:28:23,497 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 19:28:28,670 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 19:28:28,671 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 19:28:28,673 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 19:28:47,235 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107316.09746835445)]
+2025-07-06 19:28:47,246 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 19:28:47,254 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(105234.16981132075), np.float64(103591.31558441557), np.float64(107316.09746835445)]
+2025-07-06 19:28:47,397 - CryptoAnalyzer - WARNING - [technical_analyzer.py:33] - [N/A] - Insufficient data for technical analysis. Got 180 points
+2025-07-06 19:28:47,410 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 19:28:47,421 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 19:28:47,432 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(84197.2181818182), np.float64(105394.38636363637), np.float64(103834.46111111113)]
+2025-07-06 19:28:47,484 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.44696969698), np.float64(107470.76999999999)]
+2025-07-06 19:28:47,497 - CryptoAnalyzer - INFO - [technical_analyzer.py:288] - [N/A] - Calculated all technical indicators
+2025-07-06 19:28:47,505 - CryptoAnalyzer - DEBUG - [technical_analyzer.py:387] - [N/A] - Volume profile calculated with levels: [np.float64(109398.3175), np.float64(107694.44696969698), np.float64(107470.76999999999)]
+2025-07-06 19:28:48,200 - CryptoAnalyzer - CRITICAL - [system.py:148] - [N/A] - Analysis failed: list indices must be integers or slices, not str
+2025-07-06 20:21:20,820 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:21:20,823 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:21:20,828 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:21:20,832 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:21:20,835 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:21:20,837 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:21:20,839 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:21:36,562 - CryptoAnalyzer - ERROR - [fetcher.py:126] - [N/A] - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: UCxEJEw5ND4Tuj6A09X_XGddumH7-wfno8lFUMm5c-yPCAsC4Qcfgg==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-06 20:21:36,563 - CryptoAnalyzer - INFO - [fetcher.py:129] - [N/A] - Attempting fallback to 1m for BTC/USDT
+2025-07-06 20:21:36,691 - CryptoAnalyzer - ERROR - [fetcher.py:126] - [N/A] - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: O5e2mbT0I7-F6HlsD5pJ3gjcTNVPAvv0Hb12_BAmWp7OIbXDw4Tt4g==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-06 20:21:36,693 - CryptoAnalyzer - WARNING - [fetcher.py:203] - [N/A] - Empty data for primary (4h)
+2025-07-06 20:21:36,698 - CryptoAnalyzer - ERROR - [system.py:58] - [N/A] - Primary data invalid or missing
+2025-07-06 20:21:36,699 - CryptoAnalyzer - WARNING - [system.py:184] - [N/A] - Using emergency fallback to primary timeframe
+2025-07-06 20:21:37,094 - CryptoAnalyzer - ERROR - [fetcher.py:126] - [N/A] - Exchange error (4h): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: FOz4hTiXyqGtJ45Zt3IOivRO6PwN5x96o2EVPfZzqCdePZs_subMlw==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-06 20:21:37,097 - CryptoAnalyzer - INFO - [fetcher.py:129] - [N/A] - Attempting fallback to 1m for BTC/USDT
+2025-07-06 20:21:37,225 - CryptoAnalyzer - ERROR - [fetcher.py:126] - [N/A] - Exchange error (1m): bybit GET https://api.bybit.com/v5/market/time 403 Forbidden <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The Amazon CloudFront distribution is configured to block access from your country.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: YG6acU10YS5g6THsqzTTG6SyBxLP6AGr5QHxAbHLU38RVtQPqXQZOA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+2025-07-06 20:21:37,227 - CryptoAnalyzer - ERROR - [system.py:190] - [N/A] - Fallback failed: No primary data
+2025-07-06 20:22:01,728 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:22:05,471 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:22:05,473 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:22:05,474 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:22:10,559 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:22:10,562 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
+2025-07-06 20:22:10,564 - CryptoAnalyzer - INFO - [utils.py:92] - [SYSTEM_INIT] - Logger initialized successfully
