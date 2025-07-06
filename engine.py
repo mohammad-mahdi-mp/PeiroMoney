@@ -6,12 +6,72 @@ from utils import setup_logger
 
 logger = setup_logger()
 
+class MultiTimeframeAnalyzer:
+    def __init__(self, primary_analyzer, confirm_analyzer, entry_analyzer):
+        self.primary = primary_analyzer
+        self.confirm = confirm_analyzer
+        self.entry = entry_analyzer
+    
+    def check_timeframe_alignment(self) -> Dict[str, Any]:
+        """Check alignment across three timeframes"""
+        # Get market context from each timeframe
+        primary_ctx = self._get_analyzer_context(self.primary)
+        confirm_ctx = self._get_analyzer_context(self.confirm)
+        entry_ctx = self._get_analyzer_context(self.entry)
+        
+        # Determine primary trend direction
+        primary_trend = 'neutral'
+        if primary_ctx['type'] == 'Uptrend':
+            primary_trend = 'bullish'
+        elif primary_ctx['type'] == 'Downtrend':
+            primary_trend = 'bearish'
+        
+        # Check alignment
+        aligned = False
+        confirmation_strength = 0.0
+        
+        if primary_trend != 'neutral':
+            # Calculate directional agreement
+            trend_match = 0
+            if confirm_ctx['type'] == primary_ctx['type']:
+                trend_match += 1
+            if entry_ctx['type'] == primary_ctx['type']:
+                trend_match += 1
+            
+            # Calculate strength score
+            strength_factor = (
+                primary_ctx['strength'] * 0.5 + 
+                confirm_ctx['strength'] * 0.3 + 
+                entry_ctx['strength'] * 0.2
+            )
+            
+            aligned = trend_match >= 1
+            confirmation_strength = min(1.0, strength_factor * (trend_match / 2))
+        
+        return {
+            'aligned': aligned,
+            'primary_trend': primary_trend,
+            'confirmation_strength': confirmation_strength
+        }
+    
+    def _get_analyzer_context(self, analyzer) -> Dict[str, Any]:
+        """Extract market context from analyzer"""
+        # Create temporary engine instance to get context
+        temp_engine = IntelligentTradingEngine(analyzer)
+        return temp_engine.context
+
+
 class IntelligentTradingEngine:
     def __init__(self, tech_analyzer):
         self.ta = tech_analyzer
         self.df = tech_analyzer.df
         self.latest = self.df.iloc[-1]
         self.context = self._determine_market_context()
+        self.mta = None  # Will be set separately for multi-timeframe analysis
+    
+    def get_multi_timeframe_analyzer(self) -> MultiTimeframeAnalyzer:
+        return self.mta
+
     def _determine_market_context(self) -> Dict[str, Any]:
         """Determine market context with strength assessment"""
         context = {
@@ -53,6 +113,13 @@ class IntelligentTradingEngine:
             'stop_loss': None,
             'targets': []
         }
+        # Get multi-timeframe analyzer if available
+        mta = self.get_multi_timeframe_analyzer()
+        if mta:
+            alignment = mta.check_timeframe_alignment()
+            # Add alignment info to context
+            self.context['multi_timeframe_aligned'] = alignment['aligned']
+            self.context['confirmation_strength'] = alignment['confirmation_strength']
         
         # Evaluate scenarios based on market context
         if self.context['type'] in ['Uptrend', 'Downtrend']:
@@ -423,6 +490,7 @@ class IntelligentTradingEngine:
             return True
             
         return False    
+    
     def _calculate_structural_stop_loss(self, signal: str) -> float:
         """Calculate structural stop loss with ATR buffer"""
         buffer = self.latest['atr'] * 0.5
@@ -456,3 +524,230 @@ class IntelligentTradingEngine:
                        f"Entry: {setup['entry_price']:.2f}, Stop: {setup['stop_loss']:.2f}"
         }
     
+    def set_multi_timeframe_analyzer(self, mta: MultiTimeframeAnalyzer):
+        """Inject multi-timeframe analyzer"""
+        self.mta = mta
+    
+    def multi_timeframe_aligned(self) -> bool:
+        """Check if timeframes are aligned"""
+        if not self.mta:
+            return False
+        alignment = self.mta.check_timeframe_alignment()
+        return alignment['aligned']
+    
+    def generate_bridge_signal(self) -> Optional[List[Dict[str, Any]]]:
+        """Generate trade signals using Price Bridge strategy"""
+        if not self.multi_timeframe_aligned():
+            return None
+            
+        alignment = self.mta.check_timeframe_alignment()
+        bridges = self.ta.identify_price_bridges()
+        liquidation_clusters = self.ta.detect_liquidation_clusters()
+        
+        valid_signals = []
+        for bridge in bridges:
+            if bridge['strength_score'] > 7:
+                if self._has_hidden_divergence(alignment['primary_trend']) and \
+                   self._has_order_block(alignment['primary_trend']) and \
+                   self._has_pin_bar():
+                    
+                    risk_params = self._calculate_bridge_risk_params(
+                        bridge, 
+                        liquidation_clusters,
+                        alignment['primary_trend']
+                    )
+                    
+                    valid_signals.append({
+                        'bridge': bridge,
+                        'entry_price': risk_params['entry_price'],
+                        'stop_loss': risk_params['stop_loss'],
+                        'targets': risk_params['targets'],
+                        'confidence': alignment['confirmation_strength'],
+                        'trend': alignment['primary_trend']
+                    })
+        
+        return valid_signals if valid_signals else None
+    
+    def _has_hidden_divergence(self, trend: str) -> bool:
+        """Check for hidden divergence on entry timeframe"""
+        if not self.mta:
+            return False
+            
+        df = self.mta.entry.df
+        latest = df.iloc[-1]
+        
+        # Bullish hidden divergence: Higher lows in price, lower lows in oscillator
+        if trend == 'bullish':
+            price_lows = self._find_swing_lows(df)
+            rsi_lows = self._find_oscillator_lows(df)
+            
+            if len(price_lows) > 1 and len(rsi_lows) > 1:
+                return price_lows[0][1] > price_lows[1][1] and rsi_lows[0][1] < rsi_lows[1][1]
+        
+        # Bearish hidden divergence: Lower highs in price, higher highs in oscillator
+        elif trend == 'bearish':
+            price_highs = self._find_swing_highs(df)
+            rsi_highs = self._find_oscillator_highs(df)
+            
+            if len(price_highs) > 1 and len(rsi_highs) > 1:
+                return price_highs[0][1] < price_highs[1][1] and rsi_highs[0][1] > rsi_highs[1][1]
+        
+        return False
+    
+    def _find_swing_lows(self, df, lookback=20):
+        """Identify swing lows in price"""
+        lows = []
+        for i in range(len(df)-1, max(0, len(df)-lookback)-1, -1):
+            if not np.isnan(df.iloc[i]['swing_low']):
+                lows.append((i, df.iloc[i]['low']))
+                if len(lows) >= 2:
+                    break
+        return lows
+    
+    def _find_swing_highs(self, df, lookback=20):
+        """Identify swing highs in price"""
+        highs = []
+        for i in range(len(df)-1, max(0, len(df)-lookback)-1, -1):
+            if not np.isnan(df.iloc[i]['swing_high']):
+                highs.append((i, df.iloc[i]['high']))
+                if len(highs) >= 2:
+                    break
+        return highs
+    
+    def _find_oscillator_lows(self, df, lookback=20):
+        """Identify oscillator lows"""
+        lows = []
+        for i in range(len(df)-1, max(0, len(df)-lookback)-1, -1):
+            if not np.isnan(df.iloc[i]['rsi']):
+                lows.append((i, df.iloc[i]['rsi']))
+                if len(lows) >= 2:
+                    break
+        return lows
+    
+    def _find_oscillator_highs(self, df, lookback=20):
+        """Identify oscillator highs"""
+        highs = []
+        for i in range(len(df)-1, max(0, len(df)-lookback)-1, -1):
+            if not np.isnan(df.iloc[i]['rsi']):
+                highs.append((i, df.iloc[i]['rsi']))
+                if len(highs) >= 2:
+                    break
+        return highs
+    
+    def _has_order_block(self, trend: str) -> bool:
+        """Detect order block pattern on entry timeframe"""
+        if not self.mta:
+            return False
+            
+        df = self.mta.entry.df
+        if len(df) < 3:
+            return False
+            
+        # Bullish order block: Bearish candle followed by bullish breakout
+        if trend == 'bullish':
+            prev2 = df.iloc[-3]
+            prev1 = df.iloc[-2]
+            current = df.iloc[-1]
+            
+            # Bearish candle
+            if prev1['close'] < prev1['open']:
+                # Bullish breakout
+                if current['close'] > prev1['high']:
+                    return True
+        
+        # Bearish order block: Bullish candle followed by bearish breakout
+        elif trend == 'bearish':
+            prev2 = df.iloc[-3]
+            prev1 = df.iloc[-2]
+            current = df.iloc[-1]
+            
+            # Bullish candle
+            if prev1['close'] > prev1['open']:
+                # Bearish breakout
+                if current['close'] < prev1['low']:
+                    return True
+        
+        return False
+    
+    def _has_pin_bar(self) -> bool:
+        """Detect pin bar with volume confirmation on entry timeframe"""
+        if not self.mta:
+            return False
+            
+        latest = self.mta.entry.df.iloc[-1]
+        prev = self.mta.entry.df.iloc[-2]
+        
+        body_size = abs(latest['close'] - latest['open'])
+        total_range = latest['high'] - latest['low']
+        
+        if total_range == 0:
+            return False
+            
+        # Pin bar criteria: Small body with long wick
+        if body_size / total_range < 0.3:
+            upper_wick = latest['high'] - max(latest['close'], latest['open'])
+            lower_wick = min(latest['close'], latest['open']) - latest['low']
+            
+            # Bullish pin bar
+            if lower_wick > 2 * body_size and lower_wick > upper_wick:
+                # Volume confirmation
+                return latest['volume'] > prev['volume']
+            
+            # Bearish pin bar
+            elif upper_wick > 2 * body_size and upper_wick > lower_wick:
+                # Volume confirmation
+                return latest['volume'] > prev['volume']
+        
+        return False
+    
+    def _calculate_bridge_risk_params(self, bridge: Dict, 
+                                     clusters: List[Dict], 
+                                     trend: str) -> Dict[str, Any]:
+        """Calculate risk parameters for bridge setup"""
+        entry_price = self.latest['close']
+        stop_loss = None
+        targets = []
+        
+        # Calculate stop loss beyond bridge structure
+        if trend == 'bullish':
+            stop_loss = bridge['low'] - self.latest['atr'] * 0.5
+        else:  # bearish
+            stop_loss = bridge['high'] + self.latest['atr'] * 0.5
+        
+        # Find nearest liquidation clusters as targets
+        if clusters:
+            if trend == 'bullish':
+                valid_clusters = [c for c in clusters if c['price'] > entry_price]
+                if valid_clusters:
+                    nearest_cluster = min(valid_clusters, key=lambda x: x['price'] - entry_price)
+                    targets.append({
+                        'price': nearest_cluster['price'],
+                        'reason': f"Liquidation cluster ({nearest_cluster['count']} orders)"
+                    })
+            else:  # bearish
+                valid_clusters = [c for c in clusters if c['price'] < entry_price]
+                if valid_clusters:
+                    nearest_cluster = max(valid_clusters, key=lambda x: entry_price - x['price'])
+                    targets.append({
+                        'price': nearest_cluster['price'],
+                        'reason': f"Liquidation cluster ({nearest_cluster['count']} orders)"
+                    })
+        
+        # Add bridge target if no clusters found
+        if not targets:
+            if trend == 'bullish':
+                targets.append({
+                    'price': bridge['target'],
+                    'reason': "Bridge technical target"
+                })
+            else:
+                targets.append({
+                    'price': bridge['target'],
+                    'reason': "Bridge technical target"
+                })
+        
+        return {
+            'entry_price': entry_price,
+            'stop_loss': stop_loss,
+            'targets': targets
+        }    

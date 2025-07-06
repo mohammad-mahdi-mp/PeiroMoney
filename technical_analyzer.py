@@ -1,6 +1,6 @@
-# analysis/technical_analyzer.py
 import pandas as pd
 import numpy as np
+from scipy.stats import zscore
 import ta
 from scipy.signal import find_peaks
 from config import Config
@@ -9,14 +9,30 @@ from utils import setup_logger
 logger = setup_logger()
 
 class TechnicalAnalyzer:
-    def __init__(self, df: pd.DataFrame):
-        if df.empty:
-            raise ValueError("Empty dataframe provided for technical analysis")
+    def clean_financial_data(df: pd.DataFrame) -> pd.DataFrame:
+        """پاک‌سازی داده‌های مالی از مقادیر نامعتبر"""
+        # جایگزینی مقادیر بینهایت
+        df.replace([np.inf, -np.inf], np.nan, inplace=True)
+        
+        # پر کردن مقادیر خالی با روش‌های مناسب
+        df['close'] = df['close'].ffill().bfill()
+        for col in ['open', 'high', 'low', 'volume']:
+            df[col] = df[col].fillna(df['close'])
+        
+        # حذف ردیف‌های باقیمانده با مقادیر خالی
+        df.dropna(subset=['close'], inplace=True)
+        return df
+    def __init__(self, df: pd.DataFrame, timeframes: dict = None):
+        # Existing initialization
+        if not isinstance(df, pd.DataFrame):
+            raise TypeError(f"TechnicalAnalyzer requires DataFrame, got {type(df)}")
             
+        if df.empty:
+            logger.warning("Empty dataframe provided for technical analysis")
         if len(df) < max(Config.MA_PERIODS):
             logger.warning(f"Insufficient data for technical analysis. Got {len(df)} points")
-            
         self.df = df.copy()
+        self.trendlines = []
         self.calculate_all_indicators()
         self.detect_candlestick_patterns()
         self.calculate_volume_profile()
@@ -25,10 +41,188 @@ class TechnicalAnalyzer:
         self.identify_liquidity_pools()
         self.detect_market_structure()
         self.auto_draw_trendlines()
-        self.trendlines = []
-    
+        
+        # New multi-timeframe support
+        self.timeframes = {}
+        if timeframes:
+            for tf_name, tf_df in timeframes.items():
+                self.timeframes[tf_name] = tf_df.copy()
+                # Calculate indicators for additional timeframes if needed
+                # (Optional: Add indicator calculations for other timeframes)
+
+        # New attributes
+        self.pivot_point = None
+        self.r3 = None
+        self.s3 = None
+        self.price_bridges = []
+        self.liquidation_clusters = []
+        self.fib_levels = {}
+
+    def _validate_required_columns(self):
+        required_columns = ['open', 'high', 'low', 'close', 'volume', 'timestamp']
+        missing = [col for col in required_columns if col not in self.df.columns]
+        if missing:
+            raise ValueError(f"DataFrame is missing required columns for technical analysis: {missing}")
+
+    def calculate_pivot_points(self):
+        """Calculate weekly/monthly pivot points with proper timezone handling"""
+        # Ensure timestamp is in UTC
+        df_utc = self.df.copy()
+        if not df_utc['timestamp'].dt.tz:
+            df_utc['timestamp'] = df_utc['timestamp'].dt.tz_localize('UTC')
+        else:
+            df_utc['timestamp'] = df_utc['timestamp'].dt.tz_convert('UTC')
+
+        # Weekly pivots
+        weekly_df = df_utc.resample('W-MON', on='timestamp').agg({
+            'high': 'max',
+            'low': 'min',
+            'close': 'last'
+        })
+        weekly_df['pivot'] = (weekly_df['high'] + weekly_df['low'] + weekly_df['close']) / 3
+        weekly_df['r3'] = weekly_df['pivot'] + (weekly_df['high'] - weekly_df['low']) * 1.5
+        weekly_df['s3'] = weekly_df['pivot'] - (weekly_df['high'] - weekly_df['low']) * 1.5
+        
+        # Monthly pivots
+        monthly_df = df_utc.resample('MS', on='timestamp').agg({
+            'high': 'max',
+            'low': 'min',
+            'close': 'last'
+        })
+        monthly_df['pivot_monthly'] = (monthly_df['high'] + monthly_df['low'] + monthly_df['close']) / 3
+        monthly_df['r3_monthly'] = monthly_df['pivot_monthly'] + (monthly_df['high'] - monthly_df['low']) * 1.5
+        monthly_df['s3_monthly'] = monthly_df['pivot_monthly'] - (monthly_df['high'] - monthly_df['low']) * 1.5
+        
+        # Create merge keys (UTC timestamps)
+        self.df['week_start_utc'] = self.df['timestamp'].dt.tz_convert('UTC').dt.to_period('W').apply(lambda r: r.start_time.tz_localize('UTC'))
+        self.df['month_start_utc'] = self.df['timestamp'].dt.tz_convert('UTC').dt.to_period('M').apply(lambda r: r.start_time.tz_localize('UTC'))
+        
+        # Convert resampled indices to UTC
+        weekly_df.index = weekly_df.index.tz_convert('UTC')
+        monthly_df.index = monthly_df.index.tz_convert('UTC')
+        
+        # Merge with main dataframe
+        self.df = self.df.merge(
+            weekly_df[['pivot', 'r3', 's3']], 
+            left_on='week_start_utc',
+            right_index=True, 
+            how='left'
+        ).merge(
+            monthly_df[['pivot_monthly', 'r3_monthly', 's3_monthly']],
+            left_on='month_start_utc',
+            right_index=True,
+            how='left'
+        )
+        
+        # Forward fill missing values
+        pivot_cols = ['pivot', 'r3', 's3', 'pivot_monthly', 'r3_monthly', 's3_monthly']
+        self.df[pivot_cols] = self.df[pivot_cols].ffill()
+        
+    def identify_price_bridges(self):
+        """Identify price bridges with confluence scoring"""
+        # Collect all relevant levels
+        supply_prices = [z['price'] for z in self.supply_zones]
+        demand_prices = [z['price'] for z in self.demand_zones]
+        volume_levels = self.significant_levels
+        fib_levels = list(self.fib_levels.values()) if self.fib_levels else []
+        
+        # Create price clusters
+        all_levels = np.array(supply_prices + demand_prices + volume_levels + fib_levels)
+        z_scores = np.abs(zscore(all_levels))
+        filtered_levels = all_levels[z_scores < 2]  # Remove outliers
+        
+        # Cluster analysis
+        clusters = []
+        for level in filtered_levels:
+            found = False
+            for cluster in clusters:
+                if np.abs(level - cluster['mean']) < self.df['atr'].mean() * 0.5:
+                    cluster['values'].append(level)
+                    cluster['mean'] = np.mean(cluster['values'])
+                    found = True
+                    break
+            if not found:
+                clusters.append({'values': [level], 'mean': level})
+        
+        # Score clusters
+        self.price_bridges = []
+        for cluster in clusters:
+            score = 0
+            supply_demand = any(np.isin(cluster['values'], supply_prices + demand_prices))
+            fib_confluence = any(np.isin(cluster['values'], fib_levels))
+            volume_confluence = any(np.isin(cluster['values'], volume_levels))
+            
+            score += 3 if supply_demand else 0
+            score += 3 if fib_confluence else 0
+            score += 2 if volume_confluence else 0
+            score = min(score, 10)
+            
+            bridge_type = 'bullish' if any(np.isin(cluster['values'], demand_prices)) else 'bearish'
+            
+            self.price_bridges.append({
+                'price_level': cluster['mean'],
+                'type': bridge_type,
+                'strength_score': score,
+                'supply_demand': supply_demand,
+                'fib_confluence': fib_confluence,
+                'volume_profile': volume_confluence
+            })
+        return self.price_bridges    
+#.
+    def detect_liquidation_clusters(self, threshold=0.95):
+        """Detect liquidation clusters using Bybit data"""
+        if 'long_liquidations' not in self.df.columns:
+            self.liquidation_clusters = []
+            return
+        
+        # Calculate liquidation density
+        price_bins = pd.cut(self.df['close'], bins=50)
+        liquidation_density = self.df.groupby(price_bins)[['long_liquidations', 'short_liquidations']].sum()
+        liquidation_density['total'] = liquidation_density.sum(axis=1)
+        liquidation_density['zscore'] = zscore(liquidation_density['total'])
+        
+        # Identify clusters above threshold
+        threshold_value = liquidation_density['total'].quantile(threshold)
+        clusters = liquidation_density[liquidation_density['total'] >= threshold_value]
+        
+        self.liquidation_clusters = [{
+            'price_level': row.name.mid,
+            'liquidation_score': row['total']
+        } for idx, row in clusters.iterrows()]
+        return self.liquidation_clusters
+#.
+    def calculate_fibonacci_bridge(self):
+        """Calculate Fibonacci retracement levels"""
+        # Get last swing points
+        last_high = self.df['swing_high'].last_valid_index()
+        last_low = self.df['swing_low'].last_valid_index()
+        
+        if last_high is None or last_low is None:
+            return
+        
+        high_price = self.df.loc[last_high, 'swing_high']
+        low_price = self.df.loc[last_low, 'swing_low']
+        price_range = high_price - low_price
+        
+        self.fib_levels = {
+            '23.6%': low_price + price_range * 0.236,
+            '38.2%': low_price + price_range * 0.382,
+            '50%': low_price + price_range * 0.5,
+            '61.8%': low_price + price_range * 0.618,
+            '78.6%': low_price + price_range * 0.786
+        }
+        
+        # Merge with nearest price bridges
+        for level in self.fib_levels.values():
+            closest_bridge = min(self.price_bridges, 
+                               key=lambda x: abs(x['price_level'] - level),
+                               default=None)
+            if closest_bridge and abs(closest_bridge['price_level'] - level) < self.df['atr'].mean():
+                closest_bridge['fib_confluence'] = True
+#.
     def calculate_all_indicators(self):
         """Calculate all technical indicators"""
+        self._validate_required_columns()
         # Moving Averages
         for period in Config.MA_PERIODS:
             self.df[f'ma_{period}'] = ta.trend.sma_indicator(self.df['close'], window=period)
@@ -92,7 +286,7 @@ class TechnicalAnalyzer:
         self._add_vwap()
         
         logger.info("Calculated all technical indicators")
-        
+#.        
     def _add_ichimoku(self):
         """Add Ichimoku Cloud indicators"""
         if len(self.df) < max(Config.ICHIMOKU_PERIODS):
@@ -124,7 +318,7 @@ class TechnicalAnalyzer:
         # Add cloud status
         self.df['cloud_green'] = self.df['senkou_a'] > self.df['senkou_b']
         self.df['price_above_cloud'] = self.df['close'] > self.df[['senkou_a', 'senkou_b']].max(axis=1)
-    
+#.    
     def _add_supertrend(self):
         """Add Supertrend indicator"""
         if len(self.df) < Config.SUPERTREND_PERIOD:
@@ -157,14 +351,14 @@ class TechnicalAnalyzer:
         
         self.df['supertrend'] = supertrend
         self.df['supertrend_direction'] = direction
-        
+#.        
     def _add_vwap(self):
         """Add Volume Weighted Average Price"""
         # Only for intraday timeframes
-        if self.df['timestamp'].dt.floor('d').nunique() > 1:  # Check if intraday
+        if self.df['timestamp'].dt.floor('d').nunique() == 1:  # Check if intraday (single day)
             vwap = (self.df['volume'] * (self.df['high'] + self.df['low'] + self.df['close']) / 3).cumsum() / self.df['volume'].cumsum()
             self.df['vwap'] = vwap
-            
+#.            
     def calculate_volume_profile(self):
         """Calculate volume profile for significant price levels"""
         try:
@@ -194,7 +388,7 @@ class TechnicalAnalyzer:
         except Exception as e:
             logger.error(f"Volume profile calculation error: {str(e)}")
             self.significant_levels = []
-
+#.
     def identify_swing_points(self, lookback: int = 5):
         """Identify swing highs and lows using scipy's find_peaks"""
         if len(self.df) < lookback * 2:
@@ -219,7 +413,7 @@ class TechnicalAnalyzer:
         # Mark swing lows
         for idx in low_peaks:
             self.df.at[self.df.index[idx], 'swing_low'] = lows[idx]
-    
+#.    
     def identify_supply_demand_zones(self, consolidation_threshold: float = 0.02):
         """Identify supply and demand zones based on swing points"""
         if 'swing_high' not in self.df or 'swing_low' not in self.df:
@@ -282,6 +476,7 @@ class TechnicalAnalyzer:
         # Store zones
         self.supply_zones = supply_zones
         self.demand_zones = demand_zones    
+#.    
     def _calculate_zone_strength(self, price: float, zone_idx: int) -> int:
         """Calculate strength score (1-10) for a supply/demand zone"""
         score = 5  # Base score
@@ -315,7 +510,7 @@ class TechnicalAnalyzer:
         
         # Constrain score between 1-10
         return max(1, min(10, score))
-    
+#.    
     def _update_zone_test_counts(self, supply_zones: list, demand_zones: list):
         """Update the test count for each zone based on price revisits"""
         all_zones = supply_zones + demand_zones
@@ -348,7 +543,7 @@ class TechnicalAnalyzer:
                 zone['strength_score'] = min(10, zone['strength_score'] + 1)
             elif zone['test_count'] >= 3:
                 zone['strength_score'] = max(1, zone['strength_score'] - 2)
-    
+#.    
     def identify_liquidity_pools(self):
         """Identify liquidity pools (untapped swing highs/lows)"""
         self.liquidity_pools = {
@@ -396,6 +591,7 @@ class TechnicalAnalyzer:
         
         # Find equal highs and equal lows
         self._find_equal_highs_lows()    
+#.    
     def _find_equal_highs_lows(self):
         """Find clusters of equal highs and equal lows"""
         # Equal highs
@@ -483,7 +679,7 @@ class TechnicalAnalyzer:
                     'count': cluster['count'],
                     'timestamp': cluster['timestamps'][-1]
                 })
-    
+#.    
     def detect_market_structure(self):
         """Detect market structure with sequence analysis"""
         if 'swing_high' not in self.df or 'swing_low' not in self.df:
@@ -581,7 +777,7 @@ class TechnicalAnalyzer:
             self.df.loc[self.df.index[-1], 'bos'] = True
         if choch:
             self.df.loc[self.df.index[-1], 'choch'] = True
-        
+#.        
     def detect_candlestick_patterns(self):
         """Detect common candlestick patterns"""
         df = self.df
@@ -629,7 +825,7 @@ class TechnicalAnalyzer:
             (df['close'] < df['open']) &
             (df['close'] < df['open'].shift(2))
         )
-
+#.
     def auto_draw_trendlines(self, order=5):
         """
         Automatically identifies and stores major trendlines based on swing highs and lows.
@@ -690,4 +886,4 @@ class TechnicalAnalyzer:
             # در صورت خطا، یک لیست خالی ایجاد می‌کنیم تا برنامه متوقف نشود
             self.trendlines = []
             self.df['trendlines'] = [[] for _ in range(len(self.df))]
-            
+#.            
